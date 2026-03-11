@@ -1,0 +1,43 @@
+{
+  "name": "CodeLearn — Apprenez à coder",
+  "short_name": "CodeLearn",
+  "description": "Application d'apprentissage interactif des langages de programmation avec tuteur IA.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0c10",
+  "theme_color": "#00ff9d",
+  "lang": "fr",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Bug Hunt",
+      "short_name": "Bug Hunt",
+      "description": "Lancer un Bug Hunt",
+      "url": "./index.html#bughunt",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tuteur IA",
+      "short_name": "Tuteur",
+      "description": "Poser une question au tuteur IA",
+      "url": "./index.html#ai",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

@@ -39,12 +39,12 @@ return caches.delete(key);
 self.addEventListener(‘fetch’, event => {
 const url = new URL(event.request.url);
 
-// API Anthropic : toujours réseau (jamais mis en cache)
-if (url.hostname === ‘api.anthropic.com’) {
-event.respondWith(fetch(event.request));
-return;
+// API Anthropic ET fonctions Netlify : toujours réseau, jamais mis en cache
+if (url.hostname === 'api.anthropic.com' || url.pathname.startsWith('/.netlify/functions/')) {
+  event.respondWith(fetch(event.request));
+  return;
 }
-
+  
 // Google Fonts : stale-while-revalidate
 if (url.hostname === ‘fonts.googleapis.com’ || url.hostname === ‘fonts.gstatic.com’) {
 event.respondWith(

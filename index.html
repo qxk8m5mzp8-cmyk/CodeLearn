@@ -2272,15 +2272,13 @@ function appendThinking() {
 }
 
 function formatAIMessage(text) {
-  return text
+  const escaped = text
     .replace(/```(\w+)?\n?([\s\S]*?)```/g, '<pre>$2</pre>')
-
-```
-.replace(/`([^`]+)`/g, '<code>$1</code>')
-.replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--text)">$1</strong>')
-.replace(/\n/g, '<br>');
-```
-
+    .replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--text)">$1</strong>')
+    .replace(/\n/g, '<br>');
+  return escaped.replace(/`([^`]+)`/g, function(match, p1) {
+    return '<code>' + p1 + '</code>';
+  });
 }
 
 function handleChatKey(e) {
@@ -2614,9 +2612,21 @@ switchTab(hash);
 // Persist navigation state in hash
 const origSwitchTab = switchTab;
 window.switchTab = function(tab) {
-origSwitchTab(tab);
-history.replaceState(null, ‘’, ‘#’ + tab);
+  origSwitchTab(tab);
+  history.replaceState(null, '', '#' + tab);
 };
+window.selectLang = selectLang;
+window.runLessonCode = runLessonCode;
+window.runChallenge = runChallenge;
+window.loadNewChallenge = loadNewChallenge;
+window.getHint = getHint;
+window.sendMessage = sendMessage;
+window.startBugHunt = startBugHunt;
+window.getBugHint = getBugHint;
+window.clickLine = clickLine;
+window.applyUpdate = applyUpdate;
+window.handleChatKey = handleChatKey;
+window.autoResize = autoResize;
 </script>
 
 </body>

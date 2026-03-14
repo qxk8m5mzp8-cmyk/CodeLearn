@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang=« fr »>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta charset=« UTF-8 »>
+<meta name=« viewport » content=« width=device-width, initial-scale=1.0, viewport-fit=cover »>
 <title>CodeLearn — Apprenez à coder</title>
 
 <!-- PWA Manifest -->
 
-<link rel="manifest" href="manifest.json">
+<link rel=« manifest » href=« manifest.json »>
 
 <!-- Theme & Status bar -->
 
-<meta name="theme-color" content="#00ff9d">
-<meta name="msapplication-navbutton-color" content="#00ff9d">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name=« theme-color » content=« #00ff9d »>
+<meta name=« msapplication-navbutton-color » content=« #00ff9d »>
+<meta name=« apple-mobile-web-app-status-bar-style » content=« black-translucent »>
 
 <!-- iOS PWA support -->
 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="CodeLearn">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name=« apple-mobile-web-app-capable » content=« yes »>
+<meta name=« apple-mobile-web-app-title » content=« CodeLearn »>
+<link rel=« apple-touch-icon » href=« icons/icon-192.png »>
 
 <!-- Android / SEO -->
 
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="application-name" content="CodeLearn">
-<meta name="description" content="Apprenez Python, JavaScript, Rust et plus avec un tuteur IA interactif.">
+<meta name=« mobile-web-app-capable » content=« yes »>
+<meta name=« application-name » content=« CodeLearn »>
+<meta name=« description » content=« Apprenez Python, JavaScript, Rust et plus avec un tuteur IA interactif. »>
 
 <!-- Open Graph -->
 
-<meta property="og:title" content="CodeLearn — Apprenez à coder">
-<meta property="og:description" content="Tuteur IA, Bug Hunt, défis de code. Disponible hors-ligne.">
-<meta property="og:type" content="website">
+<meta property=« og:title » content=« CodeLearn — Apprenez à coder »>
+<meta property=« og:description » content=« Tuteur IA, Bug Hunt, défis de code. Disponible hors-ligne. »>
+<meta property=« og:type » content=« website »>
 
 <!-- Icons -->
 
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
+<link rel=« icon » type=« image/png » sizes=« 192x192 » href=« icons/icon-192.png »>
+<link rel=« icon » type=« image/png » sizes=« 512x512 » href=« icons/icon-512.png »>
 
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<link href=« https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap » rel=« stylesheet »>
 <style>
   :root {
     --bg: #0a0c10;
@@ -60,14 +60,14 @@
 body {
 background: var(–bg);
 color: var(–text);
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 min-height: 100vh;
 overflow-x: hidden;
 }
 
 /* Scanlines effect */
 body::before {
-content: ‘’;
+content: '’;
 position: fixed;
 inset: 0;
 background: repeating-linear-gradient(
@@ -107,7 +107,7 @@ backdrop-filter: blur(12px);
 }
 
 .logo {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 1.5rem;
 font-weight: 800;
 color: var(–accent);
@@ -165,7 +165,7 @@ gap: 8px;
 }
 
 .sidebar-label::after {
-content: ‘’;
+content: '’;
 flex: 1;
 height: 1px;
 background: var(–border);
@@ -181,7 +181,7 @@ border: 1px solid transparent;
 border-radius: 4px;
 background: transparent;
 color: var(–muted);
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.8rem;
 cursor: pointer;
 transition: all 0.2s;
@@ -298,7 +298,7 @@ border-right: 1px solid var(–border);
 .lesson-text::-webkit-scrollbar-thumb { background: var(–border); border-radius: 2px; }
 
 .lesson-title {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 1.4rem;
 font-weight: 800;
 color: var(–text);
@@ -389,7 +389,7 @@ background: var(–accent);
 color: #000;
 border: none;
 border-radius: 3px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.7rem;
 font-weight: 700;
 cursor: pointer;
@@ -420,7 +420,7 @@ background: transparent;
 border: none;
 outline: none;
 color: var(–text);
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.8rem;
 line-height: 1.6;
 resize: none;
@@ -490,7 +490,7 @@ margin-bottom: 16px;
 .badge-hard { background: rgba(123,97,255,0.1); color: var(–accent3); border: 1px solid rgba(123,97,255,0.3); }
 
 .challenge-title {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 1.3rem;
 font-weight: 800;
 margin-bottom: 12px;
@@ -639,7 +639,7 @@ border: 1px solid var(–border);
 border-radius: 4px;
 padding: 12px 16px;
 color: var(–text);
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.8rem;
 resize: none;
 min-height: 44px;
@@ -657,7 +657,7 @@ background: var(–accent3);
 color: #fff;
 border: none;
 border-radius: 4px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.7rem;
 font-weight: 700;
 cursor: pointer;
@@ -767,7 +767,7 @@ background: transparent;
 color: var(–accent2);
 border: 1px solid rgba(255,107,53,0.4);
 border-radius: 3px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.7rem;
 cursor: pointer;
 transition: all 0.2s;
@@ -788,7 +788,7 @@ background: transparent;
 color: var(–accent3);
 border: 1px solid rgba(123,97,255,0.4);
 border-radius: 3px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.7rem;
 cursor: pointer;
 transition: all 0.2s;
@@ -848,7 +848,7 @@ flex-shrink: 0;
 }
 
 .bughunt-title {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 1.1rem;
 font-weight: 800;
 color: var(–text);
@@ -985,7 +985,7 @@ animation: flashBug 0.5s ease;
 
 .score-popup {
 position: fixed;
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 1.4rem;
 font-weight: 800;
 color: var(–accent);
@@ -1027,7 +1027,7 @@ background: var(–surface);
 }
 
 .section-title {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 1rem;
 font-weight: 800;
 color: var(–text);
@@ -1062,7 +1062,7 @@ align-items: center;
 justify-content: center;
 font-size: 1.1rem;
 font-weight: 800;
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 border: 2px solid transparent;
 }
 
@@ -1087,7 +1087,7 @@ width: 68px;
 display: flex;
 align-items: center;
 justify-content: center;
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-weight: 800;
 font-size: 1.2rem;
 }
@@ -1152,7 +1152,7 @@ margin-top: 1px;
 }
 
 .rank-xp {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-weight: 700;
 font-size: 0.8rem;
 color: var(–accent2);
@@ -1193,7 +1193,7 @@ background: rgba(0,255,157,0.04);
 }
 
 .badge-card.unlocked::before {
-content: ‘’;
+content: '’;
 position: absolute;
 inset: 0;
 background: radial-gradient(circle at 50% 0%, rgba(0,255,157,0.08), transparent 70%);
@@ -1250,7 +1250,7 @@ margin-bottom: 8px;
 }
 
 .xp-level {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 0.9rem;
 font-weight: 800;
 color: var(–accent);
@@ -1346,7 +1346,7 @@ flex-shrink: 0;
 
 .install-text { flex: 1; }
 .install-title {
-font-family: ‘Syne’, sans-serif;
+font-family: 'Syne’, sans-serif;
 font-size: 0.85rem;
 font-weight: 700;
 color: var(–text);
@@ -1362,7 +1362,7 @@ background: var(–accent);
 color: #000;
 border: none;
 border-radius: 4px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.7rem;
 font-weight: 700;
 cursor: pointer;
@@ -1380,7 +1380,7 @@ background: transparent;
 color: var(–muted);
 border: 1px solid var(–border);
 border-radius: 4px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.7rem;
 cursor: pointer;
 transition: all 0.2s;
@@ -1443,7 +1443,7 @@ background: var(–accent3);
 color: #fff;
 border: none;
 border-radius: 3px;
-font-family: ‘JetBrains Mono’, monospace;
+font-family: 'JetBrains Mono’, monospace;
 font-size: 0.65rem;
 font-weight: 700;
 cursor: pointer;
@@ -1470,163 +1470,163 @@ white-space: nowrap;
 
 <!-- Offline indicator -->
 
-<div id="offline-bar">📡 Mode hors-ligne — Les fonctions IA nécessitent une connexion</div>
+<div id=« offline-bar »>📡 Mode hors-ligne — Les fonctions IA nécessitent une connexion</div>
 
 <!-- PWA Install Banner -->
 
-<div id="install-banner">
-  <div class="install-icon">💻</div>
-  <div class="install-text">
-    <div class="install-title">Installer CodeLearn</div>
-    <div class="install-sub">Accès rapide · Fonctionne hors-ligne · Aucun store requis</div>
+<div id=« install-banner »>
+  <div class=« install-icon »>💻</div>
+  <div class=« install-text »>
+    <div class=« install-title »>Installer CodeLearn</div>
+    <div class=« install-sub »>Accès rapide · Fonctionne hors-ligne · Aucun store requis</div>
   </div>
-  <div class="install-actions">
-    <button class="install-btn" id="install-accept">⬇ Installer</button>
-    <button class="install-dismiss" id="install-dismiss">Plus tard</button>
+  <div class=« install-actions »>
+    <button class=« install-btn » id=« install-accept »>⬇ Installer</button>
+    <button class=« install-dismiss » id=« install-dismiss »>Plus tard</button>
   </div>
 </div>
 
 <!-- Update available toast -->
 
-<div id="update-toast">
+<div id=« update-toast »>
   <span>🔄 Mise à jour disponible</span>
-  <button class="update-btn" onclick="applyUpdate()">Recharger</button>
+  <button class=« update-btn » onclick=« applyUpdate() »>Recharger</button>
 </div>
 
-<div class="bg-grid"></div>
+<div class=« bg-grid »></div>
 
-<header class="header">
-  <div class="logo">Code<span>Learn</span></div>
-  <div style="display:flex;align-items:center;gap:16px;">
-    <div class="xp-badge">⚡ 340 XP</div>
-    <div class="header-badge">Beta v0.1</div>
+<header class=« header »>
+  <div class=« logo »>Code<span>Learn</span></div>
+  <div style=« display:flex;align-items:center;gap:16px; »>
+    <div class=« xp-badge »>⚡ 340 XP</div>
+    <div class=« header-badge »>Beta v0.1</div>
   </div>
 </header>
 
-<div class="app">
+<div class=« app »>
   <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-label">Langages</div>
+  <aside class=« sidebar »>
+    <div class=« sidebar-section »>
+      <div class=« sidebar-label »>Langages</div>
 
-```
-  <button class="lang-btn active" onclick="selectLang(this, 'python')">
-    <div class="lang-icon" style="background:rgba(52,211,153,0.1);color:#34d399;">Py</div>
-    <div class="lang-meta">
-      <span class="lang-name">Python</span>
-      <div class="progress-bar"><div class="progress-fill" style="width:65%;background:#34d399;"></div></div>
-      <div class="lang-level">Intermédiaire · 65%</div>
+’’’
+  <button class=« lang-btn active » onclick=« selectLang(this, 'python') »>
+    <div class=« lang-icon » style=« background:rgba(52,211,153,0.1);color:#34d399; »>Py</div>
+    <div class=« lang-meta »>
+      <span class=« lang-name »>Python</span>
+      <div class=« progress-bar »><div class=« progress-fill » style=« width:65%;background:#34d399; »></div></div>
+      <div class=« lang-level »>Intermédiaire · 65%</div>
     </div>
   </button>
 
-  <button class="lang-btn" onclick="selectLang(this, 'javascript')">
-    <div class="lang-icon" style="background:rgba(251,191,36,0.1);color:#fbbf24;">JS</div>
-    <div class="lang-meta">
-      <span class="lang-name">JavaScript</span>
-      <div class="progress-bar"><div class="progress-fill" style="width:40%;background:#fbbf24;"></div></div>
-      <div class="lang-level">Débutant · 40%</div>
+  <button class=« lang-btn » onclick=« selectLang(this, 'javascript') »>
+    <div class=« lang-icon » style=« background:rgba(251,191,36,0.1);color:#fbbf24; »>JS</div>
+    <div class=« lang-meta »>
+      <span class=« lang-name »>JavaScript</span>
+      <div class=« progress-bar »><div class=« progress-fill » style=« width:40%;background:#fbbf24; »></div></div>
+      <div class=« lang-level »>Débutant · 40%</div>
     </div>
   </button>
 
-  <button class="lang-btn" onclick="selectLang(this, 'rust')">
-    <div class="lang-icon" style="background:rgba(251,113,133,0.1);color:#fb7185;">Rs</div>
-    <div class="lang-meta">
-      <span class="lang-name">Rust</span>
-      <div class="progress-bar"><div class="progress-fill" style="width:10%;background:#fb7185;"></div></div>
-      <div class="lang-level">Débutant · 10%</div>
+  <button class=« lang-btn » onclick=« selectLang(this, 'rust') »>
+    <div class=« lang-icon » style=« background:rgba(251,113,133,0.1);color:#fb7185; »>Rs</div>
+    <div class=« lang-meta »>
+      <span class=« lang-name »>Rust</span>
+      <div class=« progress-bar »><div class=« progress-fill » style=« width:10%;background:#fb7185; »></div></div>
+      <div class=« lang-level »>Débutant · 10%</div>
     </div>
   </button>
 
-  <button class="lang-btn" onclick="selectLang(this, 'sql')">
-    <div class="lang-icon" style="background:rgba(96,165,250,0.1);color:#60a5fa;">SQL</div>
-    <div class="lang-meta">
-      <span class="lang-name">SQL</span>
-      <div class="progress-bar"><div class="progress-fill" style="width:25%;background:#60a5fa;"></div></div>
-      <div class="lang-level">Débutant · 25%</div>
+  <button class=« lang-btn » onclick=« selectLang(this, 'sql') »>
+    <div class=« lang-icon » style=« background:rgba(96,165,250,0.1);color:#60a5fa; »>SQL</div>
+    <div class=« lang-meta »>
+      <span class=« lang-name »>SQL</span>
+      <div class=« progress-bar »><div class=« progress-fill » style=« width:25%;background:#60a5fa; »></div></div>
+      <div class=« lang-level »>Débutant · 25%</div>
     </div>
   </button>
 
-  <button class="lang-btn" onclick="selectLang(this, 'typescript')">
-    <div class="lang-icon" style="background:rgba(129,140,248,0.1);color:#818cf8;">TS</div>
-    <div class="lang-meta">
-      <span class="lang-name">TypeScript</span>
-      <div class="progress-bar"><div class="progress-fill" style="width:0%;background:#818cf8;"></div></div>
-      <div class="lang-level">Non commencé</div>
+  <button class=« lang-btn » onclick=« selectLang(this, 'typescript') »>
+    <div class=« lang-icon » style=« background:rgba(129,140,248,0.1);color:#818cf8; »>TS</div>
+    <div class=« lang-meta »>
+      <span class=« lang-name »>TypeScript</span>
+      <div class=« progress-bar »><div class=« progress-fill » style=« width:0%;background:#818cf8; »></div></div>
+      <div class=« lang-level »>Non commencé</div>
     </div>
   </button>
 </div>
 
-<div class="sidebar-section" style="margin-top:8px;">
-  <div class="sidebar-label">Progression</div>
-  <div style="font-size:0.72rem;color:#94a3b8;line-height:1.8;padding:0 4px;">
-    <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-      <span style="color:var(--muted)">Leçons complétées</span>
-      <span style="color:var(--accent)">13</span>
+<div class=« sidebar-section » style=« margin-top:8px; »>
+  <div class=« sidebar-label »>Progression</div>
+  <div style=« font-size:0.72rem;color:#94a3b8;line-height:1.8;padding:0 4px; »>
+    <div style=« display:flex;justify-content:space-between;margin-bottom:6px; »>
+      <span style=« color:var(--muted) »>Leçons complétées</span>
+      <span style=« color:var(--accent) »>13</span>
     </div>
-    <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
-      <span style="color:var(--muted)">Défis résolus</span>
-      <span style="color:var(--accent2)">8</span>
+    <div style=« display:flex;justify-content:space-between;margin-bottom:6px; »>
+      <span style=« color:var(--muted) »>Défis résolus</span>
+      <span style=« color:var(--accent2) »>8</span>
     </div>
-    <div style="display:flex;justify-content:space-between;">
-      <span style="color:var(--muted)">Série actuelle</span>
-      <span style="color:var(--accent3)">🔥 5 jours</span>
+    <div style=« display:flex;justify-content:space-between; »>
+      <span style=« color:var(--muted) »>Série actuelle</span>
+      <span style=« color:var(--accent3) »>🔥 5 jours</span>
     </div>
   </div>
 </div>
-```
+’’’
 
   </aside>
 
   <!-- Main -->
 
-  <main class="main">
+  <main class=« main »>
     <!-- Tabs -->
-    <div class="tabs">
-      <div class="tab active" onclick="switchTab('lesson')">📖 Leçon</div>
-      <div class="tab" onclick="switchTab('challenge')">⚔️ Défi</div>
-      <div class="tab" onclick="switchTab('bughunt')">🐛 Bug Hunt</div>
-      <div class="tab" onclick="switchTab('leaderboard')">🏆 Classement</div>
-      <div class="tab" onclick="switchTab('ai')">🤖 Tuteur IA</div>
+    <div class=« tabs »>
+      <div class=« tab active » onclick=« switchTab('lesson') »>📖 Leçon</div>
+      <div class=« tab » onclick=« switchTab('challenge') »>⚔️ Défi</div>
+      <div class=« tab » onclick=« switchTab('bughunt') »>🐛 Bug Hunt</div>
+      <div class=« tab » onclick=« switchTab('leaderboard') »>🏆 Classement</div>
+      <div class=« tab » onclick=« switchTab('ai') »>🤖 Tuteur IA</div>
     </div>
 
-```
+’’’
 <!-- Lesson Panel -->
-<div class="panel active" id="panel-lesson">
-  <div class="lesson-text">
-    <div id="lesson-content">
-      <div class="lesson-subtitle" id="lesson-lang">Python · Leçon 7</div>
-      <h2 class="lesson-title" id="lesson-title">Les fonctions et la portée des variables</h2>
-      <div class="lesson-body" id="lesson-body">
-        <p>Une <strong style="color:var(--text)">fonction</strong> est un bloc de code réutilisable qui effectue une tâche spécifique. En Python, on les définit avec le mot-clé <span class="inline-code">def</span>.</p>
-        <div class="concept-block">
-          <div class="concept-title">💡 Syntaxe de base</div>
-          <div>Utilisez <span class="inline-code">def nom_fonction(paramètres):</span> suivi d'un bloc indenté. Retournez une valeur avec <span class="inline-code">return</span>.</div>
+<div class=« panel active » id=« panel-lesson »>
+  <div class=« lesson-text »>
+    <div id=« lesson-content »>
+      <div class=« lesson-subtitle » id=« lesson-lang »>Python · Leçon 7</div>
+      <h2 class=« lesson-title » id=« lesson-title »>Les fonctions et la portée des variables</h2>
+      <div class=« lesson-body » id=« lesson-body »>
+        <p>Une <strong style=« color:var(--text) »>fonction</strong> est un bloc de code réutilisable qui effectue une tâche spécifique. En Python, on les définit avec le mot-clé <span class=« inline-code »>def</span>.</p>
+        <div class=« concept-block »>
+          <div class=« concept-title »>💡 Syntaxe de base</div>
+          <div>Utilisez <span class=« inline-code »>def nom_fonction(paramètres):</span> suivi d’un bloc indenté. Retournez une valeur avec <span class=« inline-code »>return</span>.</div>
         </div>
-        <p>La <strong style="color:var(--text)">portée</strong> (scope) détermine où une variable est accessible. Les variables définies dans une fonction sont <em style="color:var(--accent2)">locales</em> à cette fonction.</p>
-        <p>Les variables définies en dehors des fonctions sont <em style="color:var(--accent3)">globales</em> et accessibles partout — mais les modifier depuis une fonction nécessite le mot-clé <span class="inline-code">global</span>.</p>
-        <div class="concept-block">
-          <div class="concept-title">⚠️ Bonne pratique</div>
-          <div>Évitez d'abuser des variables globales. Préférez passer des valeurs en <strong style="color:var(--text)">paramètres</strong> et récupérer des résultats avec <span class="inline-code">return</span>. Votre code sera plus lisible et testable.</div>
+        <p>La <strong style=« color:var(--text) »>portée</strong> (scope) détermine où une variable est accessible. Les variables définies dans une fonction sont <em style=« color:var(--accent2) »>locales</em> à cette fonction.</p>
+        <p>Les variables définies en dehors des fonctions sont <em style=« color:var(--accent3) »>globales</em> et accessibles partout — mais les modifier depuis une fonction nécessite le mot-clé <span class=« inline-code »>global</span>.</p>
+        <div class=« concept-block »>
+          <div class=« concept-title »>⚠️ Bonne pratique</div>
+          <div>Évitez d’abuser des variables globales. Préférez passer des valeurs en <strong style=« color:var(--text) »>paramètres</strong> et récupérer des résultats avec <span class=« inline-code »>return</span>. Votre code sera plus lisible et testable.</div>
         </div>
-        <p>Essayez de modifier l'exemple à droite : créez une fonction <span class="inline-code">calculer_aire(largeur, hauteur)</span> et testez-la avec différentes valeurs !</p>
+        <p>Essayez de modifier l’exemple à droite : créez une fonction <span class=« inline-code »>calculer_aire(largeur, hauteur)</span> et testez-la avec différentes valeurs !</p>
       </div>
     </div>
   </div>
-  <div class="code-side">
-    <div class="editor-header">
-      <div class="editor-filename">
-        <div class="dot dot-red"></div>
-        <div class="dot dot-yellow"></div>
-        <div class="dot dot-green"></div>
-        <span style="margin-left:8px;" id="filename-lesson">main.py</span>
+  <div class=« code-side »>
+    <div class=« editor-header »>
+      <div class=« editor-filename »>
+        <div class=« dot dot-red »></div>
+        <div class=« dot dot-yellow »></div>
+        <div class=« dot dot-green »></div>
+        <span style=« margin-left:8px; » id=« filename-lesson »>main.py</span>
       </div>
-      <div class="editor-actions">
-        <button class="run-btn" onclick="runLessonCode()">▶ Exécuter</button>
+      <div class=« editor-actions »>
+        <button class=« run-btn » onclick=« runLessonCode() »>▶ Exécuter</button>
       </div>
     </div>
-    <div class="code-editor">
-      <textarea id="lesson-editor" spellcheck="false"># Exemple : fonctions en Python
-```
+    <div class=« code-editor »>
+      <textarea id=« lesson-editor » spellcheck=« false »># Exemple : fonctions en Python
+’’’
 
 def saluer(nom):
 “”“Retourne un message de salutation.”””
@@ -1656,305 +1656,305 @@ print(f”Compteur : {incrementer()}”)
 
 </textarea>
         </div>
-        <div class="output-panel">
-          <div class="output-label">// Sortie</div>
-          <div class="output-text" id="lesson-output" style="color:var(--muted);">En attente d'exécution...</div>
+        <div class=« output-panel »>
+          <div class=« output-label »>// Sortie</div>
+          <div class=« output-text » id=« lesson-output » style=« color:var(--muted); »>En attente d’exécution...</div>
         </div>
       </div>
     </div>
 
-```
+’’’
 <!-- Challenge Panel -->
-<div class="panel" id="panel-challenge">
-  <div class="challenge-container">
-    <div class="challenge-left">
-      <div id="challenge-content">
-        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
-          <span class="challenge-badge badge-easy" id="challenge-badge">● Facile</span>
-          <span style="color:var(--muted);font-size:0.65rem;letter-spacing:1px;">Python · #042</span>
+<div class=« panel » id=« panel-challenge »>
+  <div class=« challenge-container »>
+    <div class=« challenge-left »>
+      <div id=« challenge-content »>
+        <div style=« display:flex;align-items:center;gap:10px;margin-bottom:16px; »>
+          <span class=« challenge-badge badge-easy » id=« challenge-badge »>● Facile</span>
+          <span style=« color:var(--muted);font-size:0.65rem;letter-spacing:1px; »>Python · #042</span>
         </div>
-        <h2 class="challenge-title" id="challenge-title">Inverser une chaîne</h2>
-        <p class="challenge-desc" id="challenge-desc">Écrivez une fonction <code style="background:var(--surface2);border:1px solid var(--border);padding:2px 6px;border-radius:3px;color:var(--accent);">inverser(texte)</code> qui retourne la chaîne de caractères inversée, sans utiliser le slicing <code style="background:var(--surface2);border:1px solid var(--border);padding:2px 6px;border-radius:3px;color:var(--accent);">[::-1]</code>.</p>
+        <h2 class=« challenge-title » id=« challenge-title »>Inverser une chaîne</h2>
+        <p class=« challenge-desc » id=« challenge-desc »>Écrivez une fonction <code style=« background:var(--surface2);border:1px solid var(--border);padding:2px 6px;border-radius:3px;color:var(--accent); »>inverser(texte)</code> qui retourne la chaîne de caractères inversée, sans utiliser le slicing <code style=« background:var(--surface2);border:1px solid var(--border);padding:2px 6px;border-radius:3px;color:var(--accent); »>[::-1]</code>.</p>
 
-        <div class="sidebar-label" style="padding:0;margin-bottom:12px;">Cas de test</div>
-        <div class="test-cases" id="test-cases">
-          <div class="test-case" id="test-0">
-            <div class="test-io">entrée: <span>"hello"</span> → attendu: <span>"olleh"</span></div>
-            <div class="test-status">EN ATTENTE</div>
+        <div class=« sidebar-label » style=« padding:0;margin-bottom:12px; »>Cas de test</div>
+        <div class=« test-cases » id=« test-cases »>
+          <div class=« test-case » id=« test-0 »>
+            <div class=« test-io »>entrée: <span> »hello »</span> → attendu: <span> »olleh »</span></div>
+            <div class=« test-status »>EN ATTENTE</div>
           </div>
-          <div class="test-case" id="test-1">
-            <div class="test-io">entrée: <span>"Python"</span> → attendu: <span>"nohtyP"</span></div>
-            <div class="test-status">EN ATTENTE</div>
+          <div class=« test-case » id=« test-1 »>
+            <div class=« test-io »>entrée: <span> »Python »</span> → attendu: <span> »nohtyP »</span></div>
+            <div class=« test-status »>EN ATTENTE</div>
           </div>
-          <div class="test-case" id="test-2">
-            <div class="test-io">entrée: <span>""</span> → attendu: <span>""</span></div>
-            <div class="test-status">EN ATTENTE</div>
+          <div class=« test-case » id=« test-2 »>
+            <div class=« test-io »>entrée: <span> » »</span> → attendu: <span> » »</span></div>
+            <div class=« test-status »>EN ATTENTE</div>
           </div>
         </div>
 
-        <div style="margin-top:20px;display:flex;gap:8px;flex-wrap:wrap;">
-          <button class="new-challenge-btn" onclick="loadNewChallenge()">↻ Nouveau défi</button>
-          <button class="hint-btn" onclick="getHint()">💡 Indice IA</button>
+        <div style=« margin-top:20px;display:flex;gap:8px;flex-wrap:wrap; »>
+          <button class=« new-challenge-btn » onclick=« loadNewChallenge() »>↻ Nouveau défi</button>
+          <button class=« hint-btn » onclick=« getHint() »>💡 Indice IA</button>
         </div>
-        <div id="hint-area" style="display:none;margin-top:14px;background:rgba(123,97,255,0.07);border:1px solid rgba(123,97,255,0.3);border-radius:4px;padding:12px 14px;font-size:0.75rem;color:#94a3b8;line-height:1.8;"></div>
+        <div id=« hint-area » style=« display:none;margin-top:14px;background:rgba(123,97,255,0.07);border:1px solid rgba(123,97,255,0.3);border-radius:4px;padding:12px 14px;font-size:0.75rem;color:#94a3b8;line-height:1.8; »></div>
       </div>
     </div>
-    <div class="challenge-right">
-      <div class="editor-header">
-        <div class="editor-filename">
-          <div class="dot dot-red"></div>
-          <div class="dot dot-yellow"></div>
-          <div class="dot dot-green"></div>
-          <span style="margin-left:8px;" id="filename-challenge">solution.py</span>
+    <div class=« challenge-right »>
+      <div class=« editor-header »>
+        <div class=« editor-filename »>
+          <div class=« dot dot-red »></div>
+          <div class=« dot dot-yellow »></div>
+          <div class=« dot dot-green »></div>
+          <span style=« margin-left:8px; » id=« filename-challenge »>solution.py</span>
         </div>
-        <div class="editor-actions">
-          <button class="run-btn" onclick="runChallenge()">▶ Tester</button>
+        <div class=« editor-actions »>
+          <button class=« run-btn » onclick=« runChallenge() »>▶ Tester</button>
         </div>
       </div>
-      <div class="code-editor">
-        <textarea id="challenge-editor" spellcheck="false">def inverser(texte):
+      <div class=« code-editor »>
+        <textarea id=« challenge-editor » spellcheck=« false »>def inverser(texte):
 # Votre solution ici
-resultat = ""
+resultat = «  »
 for caractere in texte:
     resultat = caractere + resultat
 return resultat
-```
+’’’
 
 # Tests automatiques ci-dessous
 
 </textarea>
           </div>
-          <div class="output-panel">
-            <div class="output-label">// Résultats</div>
-            <div class="output-text" id="challenge-output" style="color:var(--muted);">Cliquez sur "Tester" pour vérifier votre solution...</div>
+          <div class=« output-panel »>
+            <div class=« output-label »>// Résultats</div>
+            <div class=« output-text » id=« challenge-output » style=« color:var(--muted); »>Cliquez sur « Tester » pour vérifier votre solution...</div>
           </div>
         </div>
       </div>
     </div>
 
-```
+’’’
 <!-- Bug Hunt Panel -->
-<div class="panel" id="panel-bughunt">
-  <div class="bughunt-container">
-    <div class="bughunt-left">
-      <div class="bughunt-header">
-        <div class="bug-icon">🐛</div>
+<div class=« panel » id=« panel-bughunt »>
+  <div class=« bughunt-container »>
+    <div class=« bughunt-left »>
+      <div class=« bughunt-header »>
+        <div class=« bug-icon »>🐛</div>
         <div>
-          <div class="bughunt-title" id="bh-title">Trouver les bugs</div>
-          <div class="bughunt-subtitle" id="bh-subtitle">Python · Niveau Intermédiaire</div>
+          <div class=« bughunt-title » id=« bh-title »>Trouver les bugs</div>
+          <div class=« bughunt-subtitle » id=« bh-subtitle »>Python · Niveau Intermédiaire</div>
         </div>
       </div>
-      <p class="bug-desc" id="bh-desc">Ce code contient <strong style="color:var(--error)" id="bh-count">3 bugs</strong>. Cliquez sur les lignes suspectes dans l'éditeur pour les identifier. Soyez rapide — le chrono tourne !</p>
+      <p class=« bug-desc » id=« bh-desc »>Ce code contient <strong style=« color:var(--error) » id=« bh-count »>3 bugs</strong>. Cliquez sur les lignes suspectes dans l’éditeur pour les identifier. Soyez rapide — le chrono tourne !</p>
 
       <div>
-        <div class="timer-label">
+        <div class=« timer-label »>
           <span>// Temps restant</span>
-          <span id="timer-text" style="color:var(--accent2);">03:00</span>
+          <span id=« timer-text » style=« color:var(--accent2); »>03:00</span>
         </div>
-        <div class="timer-bar-wrap">
-          <div class="timer-bar" id="timer-bar" style="width:100%;"></div>
+        <div class=« timer-bar-wrap »>
+          <div class=« timer-bar » id=« timer-bar » style=« width:100%; »></div>
         </div>
       </div>
 
       <div>
-        <div class="sidebar-label" style="padding:0;margin-bottom:10px;">Bugs détectés</div>
-        <div class="bugs-found" id="bugs-found">
-          <div class="bug-item" id="bug-item-0">
-            <div class="bug-num">1</div>
+        <div class=« sidebar-label » style=« padding:0;margin-bottom:10px; »>Bugs détectés</div>
+        <div class=« bugs-found » id=« bugs-found »>
+          <div class=« bug-item » id=« bug-item-0 »>
+            <div class=« bug-num »>1</div>
             <div>En attente...</div>
           </div>
-          <div class="bug-item" id="bug-item-1">
-            <div class="bug-num">2</div>
+          <div class=« bug-item » id=« bug-item-1 »>
+            <div class=« bug-num »>2</div>
             <div>En attente...</div>
           </div>
-          <div class="bug-item" id="bug-item-2">
-            <div class="bug-num">3</div>
+          <div class=« bug-item » id=« bug-item-2 »>
+            <div class=« bug-num »>3</div>
             <div>En attente...</div>
           </div>
         </div>
       </div>
 
-      <div class="bughunt-actions">
-        <button class="run-btn" onclick="startBugHunt()" id="bh-start-btn">▶ Nouveau Bug Hunt</button>
-        <button class="hint-btn" onclick="getBugHint()" id="bh-hint-btn">💡 Indice</button>
+      <div class=« bughunt-actions »>
+        <button class=« run-btn » onclick=« startBugHunt() » id=« bh-start-btn »>▶ Nouveau Bug Hunt</button>
+        <button class=« hint-btn » onclick=« getBugHint() » id=« bh-hint-btn »>💡 Indice</button>
       </div>
-      <div id="bh-hint-area" style="display:none;background:rgba(123,97,255,0.07);border:1px solid rgba(123,97,255,0.3);border-radius:4px;padding:12px 14px;font-size:0.75rem;color:#94a3b8;line-height:1.8;"></div>
+      <div id=« bh-hint-area » style=« display:none;background:rgba(123,97,255,0.07);border:1px solid rgba(123,97,255,0.3);border-radius:4px;padding:12px 14px;font-size:0.75rem;color:#94a3b8;line-height:1.8; »></div>
     </div>
 
-    <div class="bughunt-right">
-      <div class="editor-header">
-        <div class="editor-filename">
-          <div class="dot dot-red"></div>
-          <div class="dot dot-yellow"></div>
-          <div class="dot dot-green"></div>
-          <span style="margin-left:8px;">buggy.py</span>
+    <div class=« bughunt-right »>
+      <div class=« editor-header »>
+        <div class=« editor-filename »>
+          <div class=« dot dot-red »></div>
+          <div class=« dot dot-yellow »></div>
+          <div class=« dot dot-green »></div>
+          <span style=« margin-left:8px; »>buggy.py</span>
         </div>
-        <div style="font-size:0.68rem;color:var(--muted);letter-spacing:1px;">CLIQUEZ SUR LES LIGNES BUGGUÉES</div>
+        <div style=« font-size:0.68rem;color:var(--muted);letter-spacing:1px; »>CLIQUEZ SUR LES LIGNES BUGGUÉES</div>
       </div>
-      <div class="code-editor" style="overflow-y:auto;">
-        <div id="bh-code-display" style="font-size:0.78rem;line-height:1.7;font-family:'JetBrains Mono',monospace;color:var(--text);">
-          <div style="color:var(--muted);padding:40px;text-align:center;">Cliquez sur "Nouveau Bug Hunt" pour commencer →</div>
+      <div class=« code-editor » style=« overflow-y:auto; »>
+        <div id=« bh-code-display » style=« font-size:0.78rem;line-height:1.7;font-family:’JetBrains Mono’,monospace;color:var(--text); »>
+          <div style=« color:var(--muted);padding:40px;text-align:center; »>Cliquez sur « Nouveau Bug Hunt » pour commencer →</div>
         </div>
       </div>
-      <div class="output-panel">
-        <div class="output-label">// Résultat</div>
-        <div class="output-text" id="bh-output" style="color:var(--muted);">Trouvez tous les bugs pour valider !</div>
+      <div class=« output-panel »>
+        <div class=« output-label »>// Résultat</div>
+        <div class=« output-text » id=« bh-output » style=« color:var(--muted); »>Trouvez tous les bugs pour valider !</div>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Leaderboard Panel -->
-<div class="panel" id="panel-leaderboard">
-  <div class="leaderboard-container">
-    <div class="leaderboard-left">
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;">
-        <div class="section-title">🏆 Classement hebdomadaire</div>
-        <div style="font-size:0.65rem;color:var(--muted);letter-spacing:1px;">Semaine du 10 mars</div>
+<div class=« panel » id=« panel-leaderboard »>
+  <div class=« leaderboard-container »>
+    <div class=« leaderboard-left »>
+      <div style=« display:flex;align-items:center;justify-content:space-between;margin-bottom:20px; »>
+        <div class=« section-title »>🏆 Classement hebdomadaire</div>
+        <div style=« font-size:0.65rem;color:var(--muted);letter-spacing:1px; »>Semaine du 10 mars</div>
       </div>
 
       <!-- Podium top 3 -->
-      <div class="podium">
-        <div class="podium-step">
-          <div class="podium-avatar" style="background:rgba(148,163,184,0.1);border-color:#94a3b8;font-size:0.8rem;">🥈</div>
-          <div class="podium-name">Marie L.</div>
-          <div class="podium-score">2840 XP</div>
-          <div class="podium-block" style="height:70px;background:rgba(148,163,184,0.12);border:1px solid rgba(148,163,184,0.3);color:#94a3b8;">2</div>
+      <div class=« podium »>
+        <div class=« podium-step »>
+          <div class=« podium-avatar » style=« background:rgba(148,163,184,0.1);border-color:#94a3b8;font-size:0.8rem; »>🥈</div>
+          <div class=« podium-name »>Marie L.</div>
+          <div class=« podium-score »>2840 XP</div>
+          <div class=« podium-block » style=« height:70px;background:rgba(148,163,184,0.12);border:1px solid rgba(148,163,184,0.3);color:#94a3b8; »>2</div>
         </div>
-        <div class="podium-step">
-          <div class="podium-avatar" style="background:rgba(251,191,36,0.12);border-color:#fbbf24;font-size:0.8rem;">🥇</div>
-          <div class="podium-name">Alex T.</div>
-          <div class="podium-score">3920 XP</div>
-          <div class="podium-block" style="height:100px;background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.35);color:#fbbf24;">1</div>
+        <div class=« podium-step »>
+          <div class=« podium-avatar » style=« background:rgba(251,191,36,0.12);border-color:#fbbf24;font-size:0.8rem; »>🥇</div>
+          <div class=« podium-name »>Alex T.</div>
+          <div class=« podium-score »>3920 XP</div>
+          <div class=« podium-block » style=« height:100px;background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.35);color:#fbbf24; »>1</div>
         </div>
-        <div class="podium-step">
-          <div class="podium-avatar" style="background:rgba(251,113,133,0.1);border-color:#fb7185;font-size:0.8rem;">🥉</div>
-          <div class="podium-name">Sam K.</div>
-          <div class="podium-score">2100 XP</div>
-          <div class="podium-block" style="height:50px;background:rgba(251,113,133,0.08);border:1px solid rgba(251,113,133,0.3);color:#fb7185;">3</div>
+        <div class=« podium-step »>
+          <div class=« podium-avatar » style=« background:rgba(251,113,133,0.1);border-color:#fb7185;font-size:0.8rem; »>🥉</div>
+          <div class=« podium-name »>Sam K.</div>
+          <div class=« podium-score »>2100 XP</div>
+          <div class=« podium-block » style=« height:50px;background:rgba(251,113,133,0.08);border:1px solid rgba(251,113,133,0.3);color:#fb7185; »>3</div>
         </div>
       </div>
 
       <!-- Rank list -->
-      <div class="rank-list" id="rank-list">
-        <div class="rank-row me">
-          <div class="rank-num" style="color:var(--accent);">4</div>
-          <div class="rank-avatar" style="background:rgba(0,255,157,0.12);color:var(--accent);border:1px solid rgba(0,255,157,0.3);">Moi</div>
-          <div class="rank-info">
-            <div class="rank-name">Vous <span style="font-size:0.6rem;color:var(--accent);background:rgba(0,255,157,0.1);padding:1px 6px;border-radius:2px;margin-left:4px;">VOUS</span></div>
-            <div class="rank-detail">Python · Intermédiaire · 🔥 5 jours</div>
+      <div class=« rank-list » id=« rank-list »>
+        <div class=« rank-row me »>
+          <div class=« rank-num » style=« color:var(--accent); »>4</div>
+          <div class=« rank-avatar » style=« background:rgba(0,255,157,0.12);color:var(--accent);border:1px solid rgba(0,255,157,0.3); »>Moi</div>
+          <div class=« rank-info »>
+            <div class=« rank-name »>Vous <span style=« font-size:0.6rem;color:var(--accent);background:rgba(0,255,157,0.1);padding:1px 6px;border-radius:2px;margin-left:4px; »>VOUS</span></div>
+            <div class=« rank-detail »>Python · Intermédiaire · 🔥 5 jours</div>
           </div>
-          <div class="rank-xp">340 XP</div>
-          <div class="rank-change" style="color:var(--accent);">▲2</div>
+          <div class=« rank-xp »>340 XP</div>
+          <div class=« rank-change » style=« color:var(--accent); »>▲2</div>
         </div>
-        <div class="rank-row">
-          <div class="rank-num">5</div>
-          <div class="rank-avatar" style="background:rgba(129,140,248,0.1);color:#818cf8;">JB</div>
-          <div class="rank-info">
-            <div class="rank-name">Jean-Baptiste</div>
-            <div class="rank-detail">JavaScript · Débutant</div>
+        <div class=« rank-row »>
+          <div class=« rank-num »>5</div>
+          <div class=« rank-avatar » style=« background:rgba(129,140,248,0.1);color:#818cf8; »>JB</div>
+          <div class=« rank-info »>
+            <div class=« rank-name »>Jean-Baptiste</div>
+            <div class=« rank-detail »>JavaScript · Débutant</div>
           </div>
-          <div class="rank-xp">310 XP</div>
-          <div class="rank-change" style="color:var(--muted);">—</div>
+          <div class=« rank-xp »>310 XP</div>
+          <div class=« rank-change » style=« color:var(--muted); »>—</div>
         </div>
-        <div class="rank-row">
-          <div class="rank-num">6</div>
-          <div class="rank-avatar" style="background:rgba(251,191,36,0.1);color:#fbbf24;">CR</div>
-          <div class="rank-info">
-            <div class="rank-name">Camille R.</div>
-            <div class="rank-detail">Rust · Débutant</div>
+        <div class=« rank-row »>
+          <div class=« rank-num »>6</div>
+          <div class=« rank-avatar » style=« background:rgba(251,191,36,0.1);color:#fbbf24; »>CR</div>
+          <div class=« rank-info »>
+            <div class=« rank-name »>Camille R.</div>
+            <div class=« rank-detail »>Rust · Débutant</div>
           </div>
-          <div class="rank-xp">280 XP</div>
-          <div class="rank-change" style="color:var(--error);">▼1</div>
+          <div class=« rank-xp »>280 XP</div>
+          <div class=« rank-change » style=« color:var(--error); »>▼1</div>
         </div>
-        <div class="rank-row">
-          <div class="rank-num">7</div>
-          <div class="rank-avatar" style="background:rgba(52,211,153,0.1);color:#34d399;">NO</div>
-          <div class="rank-info">
-            <div class="rank-name">Nicolas O.</div>
-            <div class="rank-detail">Python · Avancé</div>
+        <div class=« rank-row »>
+          <div class=« rank-num »>7</div>
+          <div class=« rank-avatar » style=« background:rgba(52,211,153,0.1);color:#34d399; »>NO</div>
+          <div class=« rank-info »>
+            <div class=« rank-name »>Nicolas O.</div>
+            <div class=« rank-detail »>Python · Avancé</div>
           </div>
-          <div class="rank-xp">245 XP</div>
-          <div class="rank-change" style="color:var(--muted);">—</div>
+          <div class=« rank-xp »>245 XP</div>
+          <div class=« rank-change » style=« color:var(--muted); »>—</div>
         </div>
       </div>
     </div>
 
-    <div class="leaderboard-right">
+    <div class=« leaderboard-right »>
       <!-- XP progress -->
-      <div class="section-title" style="margin-bottom:14px;">⚡ Votre progression</div>
-      <div class="xp-track">
-        <div class="xp-row">
+      <div class=« section-title » style=« margin-bottom:14px; »>⚡ Votre progression</div>
+      <div class=« xp-track »>
+        <div class=« xp-row »>
           <div>
-            <div class="xp-level">Niveau 8</div>
-            <div style="font-size:0.62rem;color:var(--muted);margin-top:2px;">Code Wanderer</div>
+            <div class=« xp-level »>Niveau 8</div>
+            <div style=« font-size:0.62rem;color:var(--muted);margin-top:2px; »>Code Wanderer</div>
           </div>
-          <div class="xp-next">340 / 500 XP</div>
+          <div class=« xp-next »>340 / 500 XP</div>
         </div>
-        <div class="xp-bar"><div class="xp-fill" id="xp-fill" style="width:68%;"></div></div>
-        <div style="font-size:0.62rem;color:var(--muted);margin-top:6px;">160 XP pour atteindre le niveau 9</div>
+        <div class=« xp-bar »><div class=« xp-fill » id=« xp-fill » style=« width:68%; »></div></div>
+        <div style=« font-size:0.62rem;color:var(--muted);margin-top:6px; »>160 XP pour atteindre le niveau 9</div>
       </div>
 
       <!-- Badges -->
-      <div class="section-title" style="margin-bottom:14px;">🎖️ Badges</div>
-      <div class="badges-grid">
-        <div class="badge-card unlocked">
-          <div class="badge-unlock-glow"></div>
-          <div class="badge-emoji">🔥</div>
-          <div class="badge-label">Série 5 jours</div>
+      <div class=« section-title » style=« margin-bottom:14px; »>🎖️ Badges</div>
+      <div class=« badges-grid »>
+        <div class=« badge-card unlocked »>
+          <div class=« badge-unlock-glow »></div>
+          <div class=« badge-emoji »>🔥</div>
+          <div class=« badge-label »>Série 5 jours</div>
         </div>
-        <div class="badge-card unlocked">
-          <div class="badge-emoji">🐛</div>
-          <div class="badge-label">Premier Bug</div>
+        <div class=« badge-card unlocked »>
+          <div class=« badge-emoji »>🐛</div>
+          <div class=« badge-label »>Premier Bug</div>
         </div>
-        <div class="badge-card unlocked">
-          <div class="badge-emoji">⚡</div>
-          <div class="badge-label">Speed Coder</div>
+        <div class=« badge-card unlocked »>
+          <div class=« badge-emoji »>⚡</div>
+          <div class=« badge-label »>Speed Coder</div>
         </div>
-        <div class="badge-card unlocked">
-          <div class="badge-emoji">🐍</div>
-          <div class="badge-label">Python 50%</div>
+        <div class=« badge-card unlocked »>
+          <div class=« badge-emoji »>🐍</div>
+          <div class=« badge-label »>Python 50%</div>
         </div>
-        <div class="badge-card locked">
-          <div class="badge-emoji">💎</div>
-          <div class="badge-label">100 Défis</div>
+        <div class=« badge-card locked »>
+          <div class=« badge-emoji »>💎</div>
+          <div class=« badge-label »>100 Défis</div>
         </div>
-        <div class="badge-card locked">
-          <div class="badge-emoji">🦀</div>
-          <div class="badge-label">Rust Initié</div>
+        <div class=« badge-card locked »>
+          <div class=« badge-emoji »>🦀</div>
+          <div class=« badge-label »>Rust Initié</div>
         </div>
-        <div class="badge-card locked">
-          <div class="badge-emoji">🏆</div>
-          <div class="badge-label">Top 3 semaine</div>
+        <div class=« badge-card locked »>
+          <div class=« badge-emoji »>🏆</div>
+          <div class=« badge-label »>Top 3 semaine</div>
         </div>
-        <div class="badge-card locked">
-          <div class="badge-emoji">🌙</div>
-          <div class="badge-label">Série 30 jours</div>
+        <div class=« badge-card locked »>
+          <div class=« badge-emoji »>🌙</div>
+          <div class=« badge-label »>Série 30 jours</div>
         </div>
-        <div class="badge-card locked">
-          <div class="badge-emoji">🤖</div>
-          <div class="badge-label">IA Master</div>
+        <div class=« badge-card locked »>
+          <div class=« badge-emoji »>🤖</div>
+          <div class=« badge-label »>IA Master</div>
         </div>
       </div>
 
       <!-- Weekly stats -->
-      <div class="section-title" style="margin-bottom:14px;">📊 Cette semaine</div>
-      <div style="display:flex;flex-direction:column;gap:8px;font-size:0.73rem;">
-        <div style="display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;">
-          <span style="color:var(--muted)">Bugs trouvés</span>
-          <span style="color:var(--error);font-weight:700;" id="stat-bugs">0</span>
+      <div class=« section-title » style=« margin-bottom:14px; »>📊 Cette semaine</div>
+      <div style=« display:flex;flex-direction:column;gap:8px;font-size:0.73rem; »>
+        <div style=« display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px; »>
+          <span style=« color:var(--muted) »>Bugs trouvés</span>
+          <span style=« color:var(--error);font-weight:700; » id=« stat-bugs »>0</span>
         </div>
-        <div style="display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;">
-          <span style="color:var(--muted)">Défis résolus</span>
-          <span style="color:var(--accent2);font-weight:700;">8</span>
+        <div style=« display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px; »>
+          <span style=« color:var(--muted) »>Défis résolus</span>
+          <span style=« color:var(--accent2);font-weight:700; »>8</span>
         </div>
-        <div style="display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;">
-          <span style="color:var(--muted)">Leçons complétées</span>
-          <span style="color:var(--accent);font-weight:700;">3</span>
+        <div style=« display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px; »>
+          <span style=« color:var(--muted) »>Leçons complétées</span>
+          <span style=« color:var(--accent);font-weight:700; »>3</span>
         </div>
-        <div style="display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;">
-          <span style="color:var(--muted)">XP gagnés</span>
-          <span style="color:var(--accent3);font-weight:700;" id="stat-xp">340</span>
+        <div style=« display:flex;justify-content:space-between;padding:8px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:4px; »>
+          <span style=« color:var(--muted) »>XP gagnés</span>
+          <span style=« color:var(--accent3);font-weight:700; » id=« stat-xp »>340</span>
         </div>
       </div>
     </div>
@@ -1962,37 +1962,37 @@ return resultat
 </div>
 
 <!-- AI Panel -->
-<div class="panel" id="panel-ai">
-  <div class="chat-messages" id="chat-messages">
-    <div class="msg">
-      <div class="msg-avatar ai">AI</div>
-      <div class="msg-content">
-        <div class="msg-author ai">Tuteur IA · CodeLearn</div>
-        <div class="msg-text">Bonjour ! Je suis votre tuteur IA spécialisé en programmation. Je peux vous expliquer des concepts, corriger votre code, vous proposer des exercices adaptés à votre niveau, ou répondre à toutes vos questions sur <strong style="color:var(--text)">Python, JavaScript, Rust, SQL ou TypeScript</strong>.<br><br>Que souhaitez-vous apprendre aujourd'hui ? 🚀</div>
+<div class=« panel » id=« panel-ai »>
+  <div class=« chat-messages » id=« chat-messages »>
+    <div class=« msg »>
+      <div class=« msg-avatar ai »>AI</div>
+      <div class=« msg-content »>
+        <div class=« msg-author ai »>Tuteur IA · CodeLearn</div>
+        <div class=« msg-text »>Bonjour ! Je suis votre tuteur IA spécialisé en programmation. Je peux vous expliquer des concepts, corriger votre code, vous proposer des exercices adaptés à votre niveau, ou répondre à toutes vos questions sur <strong style=« color:var(--text) »>Python, JavaScript, Rust, SQL ou TypeScript</strong>.<br><br>Que souhaitez-vous apprendre aujourd’hui ? 🚀</div>
       </div>
     </div>
   </div>
-  <div class="chat-input-area">
-    <textarea class="chat-input" id="chat-input" placeholder="Posez votre question ou collez du code..." rows="1" onkeydown="handleChatKey(event)" oninput="autoResize(this)"></textarea>
-    <button class="send-btn" id="send-btn" onclick="sendMessage()">Envoyer →</button>
+  <div class=« chat-input-area »>
+    <textarea class=« chat-input » id=« chat-input » placeholder=« Posez votre question ou collez du code... » rows=« 1 » onkeydown=« handleChatKey(event) » oninput=« autoResize(this) »></textarea>
+    <button class=« send-btn » id=« send-btn » onclick=« sendMessage() »>Envoyer →</button>
   </div>
 </div>
 
 <!-- Status bar -->
-<div class="statusbar">
-  <div class="status-left">
-    <div class="status-item">
-      <div class="status-dot"></div>
-      <span id="current-lang-status">Python</span>
+<div class=« statusbar »>
+  <div class=« status-left »>
+    <div class=« status-item »>
+      <div class=« status-dot »></div>
+      <span id=« current-lang-status »>Python</span>
     </div>
-    <span id="current-lesson-status">Leçon 7 / 12</span>
+    <span id=« current-lesson-status »>Leçon 7 / 12</span>
   </div>
-  <div class="status-right">
+  <div class=« status-right »>
     <span>IA: Claude Sonnet</span>
-    <span style="color:var(--accent)">● Connecté</span>
+    <span style=« color:var(--accent) »>● Connecté</span>
   </div>
 </div>
-```
+’’’
 
   </main>
 </div>
@@ -2002,43 +2002,43 @@ const LANGS = {
   python: {
     name: 'Python', file: 'main.py',
     lesson: { title: 'Les fonctions et la portée des variables', subtitle: 'Python · Leçon 7', num: '7 / 12',
-      body: `<p>Une <strong style="color:var(--text)">fonction</strong> est un bloc de code réutilisable qui effectue une tâche spécifique. En Python, on les définit avec le mot-clé <span class="inline-code">def</span>.</p>
-      <div class="concept-block"><div class="concept-title">💡 Syntaxe de base</div><div>Utilisez <span class="inline-code">def nom_fonction(paramètres):</span> suivi d'un bloc indenté. Retournez une valeur avec <span class="inline-code">return</span>.</div></div>
-      <p>La <strong style="color:var(--text)">portée</strong> (scope) détermine où une variable est accessible. Les variables définies dans une fonction sont <em style="color:var(--accent2)">locales</em> à cette fonction.</p>
-      <p>Les variables globales sont accessibles partout — mais leur modification nécessite le mot-clé <span class="inline-code">global</span>.</p>`,
-      code: `# Exemple : fonctions en Python\n\ndef saluer(nom):\n    """Retourne un message de salutation."""\n    message = f"Bonjour, {nom} !"\n    return message\n\n# Variables locales vs globales\ncompteur = 0  # variable globale\n\ndef incrementer():\n    global compteur\n    compteur += 1\n    return compteur\n\n# Testons nos fonctions\nprint(saluer("Alice"))\nprint(f"Compteur : {incrementer()}")\nprint(f"Compteur : {incrementer()}")\n` },
+      body: ’<p>Une <strong style=« color:var(--text) »>fonction</strong> est un bloc de code réutilisable qui effectue une tâche spécifique. En Python, on les définit avec le mot-clé <span class=« inline-code »>def</span>.</p>
+      <div class=« concept-block »><div class=« concept-title »>💡 Syntaxe de base</div><div>Utilisez <span class=« inline-code »>def nom_fonction(paramètres):</span> suivi d’un bloc indenté. Retournez une valeur avec <span class=« inline-code »>return</span>.</div></div>
+      <p>La <strong style=« color:var(--text) »>portée</strong> (scope) détermine où une variable est accessible. Les variables définies dans une fonction sont <em style=« color:var(--accent2) »>locales</em> à cette fonction.</p>
+      <p>Les variables globales sont accessibles partout — mais leur modification nécessite le mot-clé <span class=« inline-code »>global</span>.</p>’,
+      code: ’# Exemple : fonctions en Python\n\ndef saluer(nom):\n    «  » »Retourne un message de salutation. » » »\n    message = f »Bonjour, {nom} ! »\n    return message\n\n# Variables locales vs globales\ncompteur = 0  # variable globale\n\ndef incrementer():\n    global compteur\n    compteur += 1\n    return compteur\n\n# Testons nos fonctions\nprint(saluer(« Alice »))\nprint(f »Compteur : {incrementer()} »)\nprint(f »Compteur : {incrementer()} »)\n’ },
   },
   javascript: {
     name: 'JavaScript', file: 'main.js',
     lesson: { title: 'Les promesses et async/await', subtitle: 'JavaScript · Leçon 4', num: '4 / 15',
-      body: `<p>Les <strong style="color:var(--text)">Promesses</strong> permettent de gérer des opérations asynchrones en JavaScript. Elles représentent une valeur qui sera disponible dans le futur.</p>
-      <div class="concept-block"><div class="concept-title">💡 async / await</div><div>La syntaxe <span class="inline-code">async/await</span> est du sucre syntaxique sur les Promesses. Elle rend le code asynchrone aussi lisible que du code synchrone.</div></div>
-      <p>Une fonction <span class="inline-code">async</span> retourne toujours une Promesse. À l'intérieur, <span class="inline-code">await</span> met en pause l'exécution jusqu'à la résolution de la promesse.</p>`,
-      code: `// Promesses et async/await en JS\n\n// Simuler un appel API\nfunction fetchData(id) {\n  return new Promise((resolve) => {\n    setTimeout(() => {\n      resolve({ id, name: 'Utilisateur ' + id });\n    }, 1000);\n  });\n}\n\nasync function afficherUtilisateur(id) {\n  try {\n    const user = await fetchData(id);\n    console.log('Trouvé :', user.name);\n    return user;\n  } catch (err) {\n    console.error('Erreur :', err);\n  }\n}\n\nafficherUtilisateur(42);\n` },
+      body: ’<p>Les <strong style=« color:var(--text) »>Promesses</strong> permettent de gérer des opérations asynchrones en JavaScript. Elles représentent une valeur qui sera disponible dans le futur.</p>
+      <div class=« concept-block »><div class=« concept-title »>💡 async / await</div><div>La syntaxe <span class=« inline-code »>async/await</span> est du sucre syntaxique sur les Promesses. Elle rend le code asynchrone aussi lisible que du code synchrone.</div></div>
+      <p>Une fonction <span class=« inline-code »>async</span> retourne toujours une Promesse. À l’intérieur, <span class=« inline-code »>await</span> met en pause l’exécution jusqu’à la résolution de la promesse.</p>’,
+      code: `// Promesses et async/await en JS\n\n// Simuler un appel API\nfunction fetchData(id) {\n  return new Promise((resolve) => {\n    setTimeout(() => {\n      resolve({ id, name: 'Utilisateur ' + id });\n    }, 1000);\n  });\n}\n\nasync function afficherUtilisateur(id) {\n  try {\n    const user = await fetchData(id);\n    console.log('Trouvé :', user.name);\n    return user;\n  } catch (err) {\n    console.error('Erreur :', err);\n  }\n}\n\nafficherUtilisateur(42);\n’ },
   },
   rust: {
     name: 'Rust', file: 'main.rs',
     lesson: { title: 'Ownership et Borrowing', subtitle: 'Rust · Leçon 2', num: '2 / 20',
-      body: `<p>Le concept d'<strong style="color:var(--text)">Ownership</strong> est le cœur de Rust. Chaque valeur a un <em style="color:var(--accent)">propriétaire</em> unique, et quand ce propriétaire sort de portée, la mémoire est libérée automatiquement.</p>
-      <div class="concept-block"><div class="concept-title">⚙️ Les 3 règles</div><div>1. Chaque valeur a un propriétaire.<br>2. Il ne peut y avoir qu'un propriétaire à la fois.<br>3. Quand le propriétaire sort de portée, la valeur est supprimée.</div></div>
-      <p>Le <strong style="color:var(--text)">Borrowing</strong> (emprunt) permet de référencer une valeur sans en prendre possession, via <span class="inline-code">&</span>. C'est ce qui permet à Rust d'être sûr sans garbage collector !</p>`,
-      code: `// Ownership et Borrowing en Rust\n\nfn main() {\n    // Ownership\n    let s1 = String::from("hello");\n    let s2 = s1; // s1 est déplacé vers s2\n    // println!("{}", s1); // ERREUR !\n    println!("{}", s2);\n\n    // Borrowing\n    let s3 = String::from("world");\n    let longueur = calculer_longueur(&s3);\n    println!("{} a {} caractères", s3, longueur);\n}\n\nfn calculer_longueur(s: &String) -> usize {\n    s.len()\n}\n` },
+      body: ’<p>Le concept d’<strong style=« color:var(--text) »>Ownership</strong> est le cœur de Rust. Chaque valeur a un <em style=« color:var(--accent) »>propriétaire</em> unique, et quand ce propriétaire sort de portée, la mémoire est libérée automatiquement.</p>
+      <div class=« concept-block »><div class=« concept-title »>⚙️ Les 3 règles</div><div>1. Chaque valeur a un propriétaire.<br>2. Il ne peut y avoir qu’un propriétaire à la fois.<br>3. Quand le propriétaire sort de portée, la valeur est supprimée.</div></div>
+      <p>Le <strong style=« color:var(--text) »>Borrowing</strong> (emprunt) permet de référencer une valeur sans en prendre possession, via <span class=« inline-code »>&</span>. C’est ce qui permet à Rust d’être sûr sans garbage collector !</p>’,
+      code: `// Ownership et Borrowing en Rust\n\nfn main() {\n    // Ownership\n    let s1 = String::from(« hello »);\n    let s2 = s1; // s1 est déplacé vers s2\n    // println!(« {} », s1); // ERREUR !\n    println!(« {} », s2);\n\n    // Borrowing\n    let s3 = String::from(« world »);\n    let longueur = calculer_longueur(&s3);\n    println!(« {} a {} caractères », s3, longueur);\n}\n\nfn calculer_longueur(s: &String) -> usize {\n    s.len()\n}\n’ },
   },
   sql: {
     name: 'SQL', file: 'query.sql',
     lesson: { title: 'Jointures et agrégations', subtitle: 'SQL · Leçon 3', num: '3 / 10',
-      body: `<p>Les <strong style="color:var(--text)">jointures</strong> (JOIN) permettent de combiner des données de plusieurs tables basées sur une colonne commune.</p>
-      <div class="concept-block"><div class="concept-title">📊 Types de JOIN</div><div><span class="inline-code">INNER JOIN</span> : seulement les lignes correspondantes.<br><span class="inline-code">LEFT JOIN</span> : toutes les lignes de gauche + correspondances.<br><span class="inline-code">RIGHT JOIN</span> : toutes les lignes de droite + correspondances.</div></div>
-      <p>Les <strong style="color:var(--text)">agrégations</strong> avec <span class="inline-code">GROUP BY</span> permettent de regrouper des résultats et d'appliquer des fonctions comme <span class="inline-code">COUNT()</span>, <span class="inline-code">SUM()</span>, <span class="inline-code">AVG()</span>.</p>`,
-      code: `-- Jointures et agrégations SQL\n\n-- Compter les commandes par client\nSELECT \n    c.nom,\n    c.email,\n    COUNT(o.id) AS nb_commandes,\n    SUM(o.montant) AS total_depense\nFROM clients c\nLEFT JOIN commandes o ON c.id = o.client_id\nGROUP BY c.id, c.nom, c.email\nHAVING COUNT(o.id) > 0\nORDER BY total_depense DESC;\n` },
+      body: ’<p>Les <strong style=« color:var(--text) »>jointures</strong> (JOIN) permettent de combiner des données de plusieurs tables basées sur une colonne commune.</p>
+      <div class=« concept-block »><div class=« concept-title »>📊 Types de JOIN</div><div><span class=« inline-code »>INNER JOIN</span> : seulement les lignes correspondantes.<br><span class=« inline-code »>LEFT JOIN</span> : toutes les lignes de gauche + correspondances.<br><span class=« inline-code »>RIGHT JOIN</span> : toutes les lignes de droite + correspondances.</div></div>
+      <p>Les <strong style=« color:var(--text) »>agrégations</strong> avec <span class=« inline-code »>GROUP BY</span> permettent de regrouper des résultats et d’appliquer des fonctions comme <span class=« inline-code »>COUNT()</span>, <span class=« inline-code »>SUM()</span>, <span class=« inline-code »>AVG()</span>.</p>’,
+      code: ’-- Jointures et agrégations SQL\n\n-- Compter les commandes par client\nSELECT \n    c.nom,\n    c.email,\n    COUNT(o.id) AS nb_commandes,\n    SUM(o.montant) AS total_depense\nFROM clients c\nLEFT JOIN commandes o ON c.id = o.client_id\nGROUP BY c.id, c.nom, c.email\nHAVING COUNT(o.id) > 0\nORDER BY total_depense DESC;\n’ },
   },
   typescript: {
     name: 'TypeScript', file: 'main.ts',
     lesson: { title: 'Types génériques et interfaces', subtitle: 'TypeScript · Leçon 1', num: '1 / 14',
-      body: `<p>TypeScript ajoute un système de <strong style="color:var(--text)">typage statique</strong> à JavaScript. Les <em style="color:var(--accent)">interfaces</em> définissent la forme d'un objet.</p>
-      <div class="concept-block"><div class="concept-title">🔷 Pourquoi TypeScript ?</div><div>Le typage permet de détecter les erreurs à la compilation plutôt qu'à l'exécution. Votre IDE peut aussi offrir une meilleure autocomplétion et refactorisation.</div></div>
-      <p>Les <strong style="color:var(--text)">génériques</strong> (<span class="inline-code">T</span>) permettent de créer des composants réutilisables qui fonctionnent avec plusieurs types tout en gardant la sécurité du typage.</p>`,
-      code: `// Types génériques en TypeScript\n\ninterface Utilisateur {\n  id: number;\n  nom: string;\n  email: string;\n}\n\n// Fonction générique\nfunction premier<T>(tableau: T[]): T | undefined {\n  return tableau[0];\n}\n\n// Résultat typé\ninterface Resultat<T> {\n  data: T;\n  erreur: string | null;\n  timestamp: Date;\n}\n\nconst utilisateurs: Utilisateur[] = [\n  { id: 1, nom: 'Alice', email: 'alice@example.com' }\n];\n\nconst premierUser = premier(utilisateurs);\nconsole.log(premierUser?.nom); // Alice\n` },
+      body: ’<p>TypeScript ajoute un système de <strong style=« color:var(--text) »>typage statique</strong> à JavaScript. Les <em style=« color:var(--accent) »>interfaces</em> définissent la forme d’un objet.</p>
+      <div class=« concept-block »><div class=« concept-title »>🔷 Pourquoi TypeScript ?</div><div>Le typage permet de détecter les erreurs à la compilation plutôt qu’à l’exécution. Votre IDE peut aussi offrir une meilleure autocomplétion et refactorisation.</div></div>
+      <p>Les <strong style=« color:var(--text) »>génériques</strong> (<span class=« inline-code »>T</span>) permettent de créer des composants réutilisables qui fonctionnent avec plusieurs types tout en gardant la sécurité du typage.</p>’,
+      code: `// Types génériques en TypeScript\n\ninterface Utilisateur {\n  id: number;\n  nom: string;\n  email: string;\n}\n\n// Fonction générique\nfunction premier<T>(tableau: T[]): T | undefined {\n  return tableau[0];\n}\n\n// Résultat typé\ninterface Resultat<T> {\n  data: T;\n  erreur: string | null;\n  timestamp: Date;\n}\n\nconst utilisateurs: Utilisateur[] = [\n  { id: 1, nom: 'Alice', email: 'alice@example.com' }\n];\n\nconst premierUser = premier(utilisateurs);\nconsole.log(premierUser?.nom); // Alice\n’ },
   }
 };
 
@@ -2074,33 +2074,33 @@ function switchTab(tab) {
 }
 
 async function callClaude(prompt, systemPrompt) {
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
+  const response = await fetch(« https://api.anthropic.com/v1/messages », {
+    method: « POST »,
     headers: {
-      "Content-Type": "application/json",
+      « Content-Type »: « application/json »,
     },
     body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
+      model: « claude-sonnet-4-20250514 »,
       max_tokens: 1000,
       messages: [
-        { role: "user", content: "Your prompt here" }
+        { role: « user », content: « Your prompt here » }
       ],
     })
   });
   const data = await response.json();
-  return data.content?.[0]?.text || "Erreur de réponse.";
+  return data.content?.[0]?.text || « Erreur de réponse. »;
 }
 
 async function runLessonCode() {
   const code = document.getElementById('lesson-editor').value;
   const out = document.getElementById('lesson-output');
   out.className = 'output-text thinking';
-  out.innerHTML = 'Analyse en cours <span class="loading-dots"><span>.</span><span>.</span><span>.</span></span>';
+  out.innerHTML = 'Analyse en cours <span class=« loading-dots »><span>.</span><span>.</span><span>.</span></span>';
 
   const lang = LANGS[currentLang].name;
   const result = await callClaude(
-    `Voici du code ${lang}:\n\`\`\`\n${code}\n\`\`\`\n\nSimule l'exécution et donne la sortie console attendue (en texte brut, sans markdown). Si il y a des erreurs, explique-les brièvement. Maximum 8 lignes.`,
-    `Tu es un simulateur de code pédagogique. Réponds UNIQUEMENT avec la sortie console simulée, ou un message d'erreur court. Pas de markdown, pas d'explication longue. Langue: français.`
+    ’Voici du code ${lang}:\n\’\’\’\n${code}\n\’\’\’\n\nSimule l’exécution et donne la sortie console attendue (en texte brut, sans markdown). Si il y a des erreurs, explique-les brièvement. Maximum 8 lignes.’,
+    ’Tu es un simulateur de code pédagogique. Réponds UNIQUEMENT avec la sortie console simulée, ou un message d’erreur court. Pas de markdown, pas d’explication longue. Langue: français.’
   );
   out.className = 'output-text success';
   out.textContent = result;
@@ -2110,21 +2110,21 @@ async function runChallenge() {
   const code = document.getElementById('challenge-editor').value;
   const out = document.getElementById('challenge-output');
   out.className = 'output-text thinking';
-  out.innerHTML = 'Évaluation en cours <span class="loading-dots"><span>.</span><span>.</span><span>.</span></span>';
+  out.innerHTML = 'Évaluation en cours <span class=« loading-dots »><span>.</span><span>.</span><span>.</span></span>';
 
   const tests = [
-    { input: '"hello"', expected: '"olleh"' },
-    { input: '"Python"', expected: '"nohtyP"' },
-    { input: '""', expected: '""' }
+    { input: '« hello »', expected: '« olleh »' },
+    { input: '« Python »', expected: '« nohtyP »' },
+    { input: '«  »', expected: '«  »' }
   ];
 
   const result = await callClaude(
-    `Voici une solution à un défi de programmation (inverser une chaîne sans slicing):\n\`\`\`python\n${code}\n\`\`\`\nÉvalue si cette solution passe ces tests: ${JSON.stringify(tests)}.\nRéponds UNIQUEMENT en JSON avec ce format: {"results": [true/false, true/false, true/false], "feedback": "message court en français"}`,
-    `Tu es un évaluateur de code. Réponds UNIQUEMENT en JSON valide, rien d'autre.`
+    ’Voici une solution à un défi de programmation (inverser une chaîne sans slicing):\n\’\’\’python\n${code}\n\’\’\’\nÉvalue si cette solution passe ces tests: ${JSON.stringify(tests)}.\nRéponds UNIQUEMENT en JSON avec ce format: {« results »: [true/false, true/false, true/false], « feedback »: « message court en français »}’,
+    ’Tu es un évaluateur de code. Réponds UNIQUEMENT en JSON valide, rien d’autre.’
   );
 
   try {
-    const clean = result.replace(/```json|```/g, '').trim();
+    const clean = result.replace(/`’’json|’’`/g, '').trim();
     const parsed = JSON.parse(clean);
     const results = parsed.results || [false, false, false];
     results.forEach((pass, i) => {
@@ -2151,12 +2151,12 @@ async function loadNewChallenge() {
 
   const lang = LANGS[currentLang].name;
   const result = await callClaude(
-    `Génère un défi de programmation ${lang} original. Réponds UNIQUEMENT en JSON: {"title": "...", "difficulty": "Facile|Moyen|Difficile", "description": "...", "tests": [{"input": "...", "expected": "..."}]}. Maximum 3 tests. Description en français, concise.`,
-    `Tu es un générateur de défis de code. Réponds UNIQUEMENT en JSON valide, rien d'autre.`
+    ’Génère un défi de programmation ${lang} original. Réponds UNIQUEMENT en JSON: {« title »: « ... », « difficulty »: « Facile|Moyen|Difficile », « description »: « ... », « tests »: [{« input »: « ... », « expected »: « ... »}]}. Maximum 3 tests. Description en français, concise.’,
+    ’Tu es un générateur de défis de code. Réponds UNIQUEMENT en JSON valide, rien d’autre.’
   );
 
   try {
-    const clean = result.replace(/```json|```/g, '').trim();
+    const clean = result.replace(/`’’json|’’`/g, '').trim();
     const ch = JSON.parse(clean);
     document.getElementById('challenge-title').textContent = ch.title;
     document.getElementById('challenge-desc').innerHTML = ch.description;
@@ -2166,10 +2166,10 @@ async function loadNewChallenge() {
     badgeEl.textContent = '● ' + ch.difficulty;
     const tc = document.getElementById('test-cases');
     tc.innerHTML = (ch.tests || []).map((t, i) =>
-      `<div class="test-case" id="test-${i}"><div class="test-io">entrée: <span>${t.input}</span> → attendu: <span>${t.expected}</span></div><div class="test-status">EN ATTENTE</div></div>`
+      ’<div class=« test-case » id=« test-${i} »><div class=« test-io »>entrée: <span>${t.input}</span> → attendu: <span>${t.expected}</span></div><div class=« test-status »>EN ATTENTE</div></div>’
     ).join('');
-    document.getElementById('challenge-editor').value = `# Votre solution ${lang}\n\n`;
-    document.getElementById('challenge-output').textContent = 'Cliquez sur "Tester" pour vérifier votre solution...';
+    document.getElementById('challenge-editor').value = ’# Votre solution ${lang}\n\n’;
+    document.getElementById('challenge-output').textContent = 'Cliquez sur « Tester » pour vérifier votre solution...';
     document.getElementById('challenge-output').className = 'output-text';
     document.getElementById('challenge-output').style.color = 'var(--muted)';
   } catch { /* keep current */ }
@@ -2187,18 +2187,18 @@ async function getHint() {
   const title = document.getElementById('challenge-title').textContent;
   const code = document.getElementById('challenge-editor').value;
   const hint = await callClaude(
-    `Défi: "${title}"\nCode actuel de l'étudiant:\n\`\`\`\n${code}\n\`\`\`\nDonne un indice utile SANS donner la solution complète. Maximum 3 phrases en français. Sois encourageant.`,
-    `Tu es un tuteur bienveillant. Donne des indices, pas des solutions. Sois concis et encourageant.`
+    ’Défi: « ${title} »\nCode actuel de l’étudiant:\n\’\’\’\n${code}\n\’\’\’\nDonne un indice utile SANS donner la solution complète. Maximum 3 phrases en français. Sois encourageant.’,
+    ’Tu es un tuteur bienveillant. Donne des indices, pas des solutions. Sois concis et encourageant.’
   );
 
   hintArea.style.display = 'block';
-  hintArea.innerHTML = '💡 <strong style="color:var(--accent3)">Indice :</strong> ' + hint;
+  hintArea.innerHTML = '💡 <strong style=« color:var(--accent3) »>Indice :</strong> ' + hint;
   btn.textContent = '💡 Indice IA';
   btn.disabled = false;
 }
 
 const chatHistory = [
-  { role: "assistant", content: "Bonjour ! Je suis votre tuteur IA spécialisé en programmation. Je peux vous expliquer des concepts, corriger votre code, vous proposer des exercices adaptés à votre niveau, ou répondre à toutes vos questions sur Python, JavaScript, Rust, SQL ou TypeScript.\n\nQue souhaitez-vous apprendre aujourd'hui ? 🚀" }
+  { role: « assistant », content: « Bonjour ! Je suis votre tuteur IA spécialisé en programmation. Je peux vous expliquer des concepts, corriger votre code, vous proposer des exercices adaptés à votre niveau, ou répondre à toutes vos questions sur Python, JavaScript, Rust, SQL ou TypeScript.\n\nQue souhaitez-vous apprendre aujourd’hui ? 🚀 » }
 ];
 
 async function sendMessage() {
@@ -2212,26 +2212,26 @@ async function sendMessage() {
   document.getElementById('send-btn').disabled = true;
 
   appendMsg('user', 'Vous', msg);
-  chatHistory.push({ role: "user", content: msg });
+  chatHistory.push({ role: « user », content: msg });
 
   const thinkingId = appendThinking();
 
   const messages = chatHistory.slice(-8).map(m => ({ role: m.role, content: m.content }));
 
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
+  const response = await fetch(« https://api.anthropic.com/v1/messages », {
+    method: « POST »,
+    headers: { « Content-Type »: « application/json » },
     body: JSON.stringify({
-      model: "claude-sonnet-4-20250514",
+      model: « claude-sonnet-4-20250514 »,
       max_tokens: 1000,
-      system: `Tu es un tuteur expert en programmation pour l'application CodeLearn. L'utilisateur apprend actuellement ${LANGS[currentLang].name}. Réponds en français, sois pédagogique, concis et encourageant. Utilise des exemples de code pertinents. Formate le code avec des backticks triples.`,
+      system: ’Tu es un tuteur expert en programmation pour l’application CodeLearn. L’utilisateur apprend actuellement ${LANGS[currentLang].name}. Réponds en français, sois pédagogique, concis et encourageant. Utilise des exemples de code pertinents. Formate le code avec des backticks triples.’,
       messages
     })
   });
 
   const data = await response.json();
-  const reply = data.content?.[0]?.text || "Désolé, je n'ai pas pu répondre.";
-  chatHistory.push({ role: "assistant", content: reply });
+  const reply = data.content?.[0]?.text || « Désolé, je n’ai pas pu répondre. »;
+  chatHistory.push({ role: « assistant », content: reply });
 
   document.getElementById(thinkingId)?.remove();
   appendMsg('ai', 'Tuteur IA', formatAIMessage(reply));
@@ -2244,12 +2244,12 @@ function appendMsg(type, author, html) {
   const container = document.getElementById('chat-messages');
   const div = document.createElement('div');
   div.className = 'msg';
-  div.innerHTML = `
-    <div class="msg-avatar ${type}">${type === 'ai' ? 'AI' : 'Vous'}</div>
-    <div class="msg-content">
-      <div class="msg-author ${type}">${author}</div>
-      <div class="msg-text">${html}</div>
-    </div>`;
+  div.innerHTML = ’
+    <div class=« msg-avatar ${type} »>${type === 'ai' ? 'AI' : 'Vous'}</div>
+    <div class=« msg-content »>
+      <div class=« msg-author ${type} »>${author}</div>
+      <div class=« msg-text »>${html}</div>
+    </div>’;
   container.appendChild(div);
   container.scrollTop = container.scrollHeight;
 }
@@ -2260,12 +2260,12 @@ function appendThinking() {
   const div = document.createElement('div');
   div.className = 'msg';
   div.id = id;
-  div.innerHTML = `
-    <div class="msg-avatar ai">AI</div>
-    <div class="msg-content">
-      <div class="msg-author ai">Tuteur IA</div>
-      <div class="msg-text thinking">Réflexion en cours <span class="loading-dots"><span>.</span><span>.</span><span>.</span></span></div>
-    </div>`;
+  div.innerHTML = ’
+    <div class=« msg-avatar ai »>AI</div>
+    <div class=« msg-content »>
+      <div class=« msg-author ai »>Tuteur IA</div>
+      <div class=« msg-text thinking »>Réflexion en cours <span class=« loading-dots »><span>.</span><span>.</span><span>.</span></span></div>
+    </div>’;
   container.appendChild(div);
   container.scrollTop = container.scrollHeight;
   return id;
@@ -2273,24 +2273,24 @@ function appendThinking() {
 
 function formatAIMessage(text) {
   const escaped = text
-    .replace(/```(\w+)?\n?([\s\S]*?)```/g, '<pre>$2</pre>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong style="color:var(--text)">$1</strong>')
+    .replace(/`’’(\w+)?\n?([\s\S]*?)’’`/g, '<pre>$2</pre>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong style=« color:var(--text) »>$1</strong>')
     .replace(/\n/g, '<br>');
-  return escaped.replace(/`([^`]+)`/g, function(match, p1) {
+  return escaped.replace(/`([^’]+)`/g, function(match, p1) {
     return '<code>' + p1 + '</code>';
   });
 }
 
 function handleChatKey(e) {
-if (e.key === ‘Enter’ && !e.shiftKey) {
+if (e.key === 'Enter’ && !e.shiftKey) {
 e.preventDefault();
 sendMessage();
 }
 }
 
 function autoResize(el) {
-el.style.height = ‘auto’;
-el.style.height = Math.min(el.scrollHeight, 120) + ‘px’;
+el.style.height = 'auto’;
+el.style.height = Math.min(el.scrollHeight, 120) + 'px’;
 }
 
 // ===== BUG HUNT =====
@@ -2300,45 +2300,45 @@ let bugsFoundTotal = 0;
 
 async function startBugHunt() {
 if (bhState.timer) clearInterval(bhState.timer);
-const btn = document.getElementById(‘bh-start-btn’);
-btn.textContent = ‘⏳ Génération…’;
+const btn = document.getElementById('bh-start-btn’);
+btn.textContent = '⏳ Génération…’;
 btn.disabled = true;
-document.getElementById(‘bh-hint-area’).style.display = ‘none’;
-document.getElementById(‘bh-output’).textContent = ‘Trouvez tous les bugs pour valider !’;
-document.getElementById(‘bh-output’).style.color = ‘var(–muted)’;
+document.getElementById('bh-hint-area’).style.display = 'none’;
+document.getElementById('bh-output’).textContent = 'Trouvez tous les bugs pour valider !’;
+document.getElementById('bh-output’).style.color = 'var(–muted)’;
 
 const lang = LANGS[currentLang].name;
 const result = await callClaude(
-`Génère un extrait de code ${lang} (~15-20 lignes) avec exactement 3 bugs subtils (mauvais opérateur, index hors-limite, erreur logique, variable mal nommée, etc.). Réponds UNIQUEMENT en JSON: {"title": "...", "code_lines": ["ligne1","ligne2",...], "bugs": [{"line_index": N, "description": "explication courte en français du bug"}]}. Les line_index sont 0-based.`,
-`Tu es un générateur de code buggué pour l'apprentissage. Réponds UNIQUEMENT en JSON valide, rien d'autre.`
+’Génère un extrait de code ${lang} (~15-20 lignes) avec exactement 3 bugs subtils (mauvais opérateur, index hors-limite, erreur logique, variable mal nommée, etc.). Réponds UNIQUEMENT en JSON: {« title »: « ... », « code_lines »: [« ligne1 », »ligne2 »,...], « bugs »: [{« line_index »: N, « description »: « explication courte en français du bug »}]}. Les line_index sont 0-based.’,
+’Tu es un générateur de code buggué pour l’apprentissage. Réponds UNIQUEMENT en JSON valide, rien d’autre.’
 );
 
 try {
-const clean = result.replace(/`json|`/g, ‘’).trim();
+const clean = result.replace(/`json|`/g, '’).trim();
 const data = JSON.parse(clean);
 bhState.bugs = data.bugs || [];
 bhState.found = [];
 bhState.remaining = 180;
 bhState.active = true;
 
-```
+’’’
 document.getElementById('bh-title').textContent = data.title || 'Trouver les bugs';
 document.getElementById('bh-subtitle').textContent = lang + ' · ' + bhState.bugs.length + ' bugs cachés';
-document.getElementById('bh-count').textContent = bhState.bugs.length + ' bug' + (bhState.bugs.length > 1 ? 's' : '');
+document.getElementById('bh-count').textContent = bhState.bugs.length + ' bug' + (bhState.bugs.length > 1 ? ’s' : '');
 
 // Render clickable code lines
 const display = document.getElementById('bh-code-display');
 display.innerHTML = (data.code_lines || []).map((line, i) =>
-  `<div class="bh-line" data-idx="${i}" onclick="clickLine(${i})" style="padding:2px 12px;cursor:pointer;display:flex;gap:12px;border-left:3px solid transparent;transition:all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.03)'" onmouseout="this.style.background='transparent'">
-    <span style="color:var(--muted);user-select:none;min-width:24px;text-align:right;font-size:0.7rem;margin-top:1px;">${i+1}</span>
+  ’<div class=« bh-line » data-idx=« ${i} » onclick=« clickLine(${i}) » style=« padding:2px 12px;cursor:pointer;display:flex;gap:12px;border-left:3px solid transparent;transition:all 0.2s; » onmouseover=« this.style.background='rgba(255,255,255,0.03)'«  onmouseout=« this.style.background='transparent'« >
+    <span style=« color:var(--muted);user-select:none;min-width:24px;text-align:right;font-size:0.7rem;margin-top:1px; »>${i+1}</span>
     <span>${escapeHtml(line)}</span>
-  </div>`
+  </div>’
 ).join('');
 
 // Reset bug items
 bhState.bugs.forEach((_, i) => {
   const el = document.getElementById('bug-item-' + i);
-  if (el) { el.className = 'bug-item'; el.innerHTML = `<div class="bug-num">${i+1}</div><div>En attente...</div>`; }
+  if (el) { el.className = 'bug-item'; el.innerHTML = ’<div class=« bug-num »>${i+1}</div><div>En attente...</div>’; }
 });
 // Hide extra items
 for (let i = bhState.bugs.length; i < 3; i++) {
@@ -2347,14 +2347,14 @@ for (let i = bhState.bugs.length; i < 3; i++) {
 }
 
 startTimer();
-```
+’’’
 
 } catch(e) {
-document.getElementById(‘bh-output’).textContent = ‘Erreur de génération. Réessayez.’;
-document.getElementById(‘bh-output’).style.color = ‘var(–error)’;
+document.getElementById('bh-output’).textContent = 'Erreur de génération. Réessayez.’;
+document.getElementById('bh-output’).style.color = 'var(–error)’;
 }
 
-btn.textContent = ‘↻ Nouveau Bug Hunt’;
+btn.textContent = '↻ Nouveau Bug Hunt’;
 btn.disabled = false;
 }
 
@@ -2379,38 +2379,38 @@ revealAllBugs();
 }
 
 function updateTimerDisplay() {
-const m = Math.floor(bhState.remaining / 60).toString().padStart(2, ‘0’);
-const s = (bhState.remaining % 60).toString().padStart(2, ‘0’);
-document.getElementById(‘timer-text’).textContent = m + ‘:’ + s;
+const m = Math.floor(bhState.remaining / 60).toString().padStart(2, '0’);
+const s = (bhState.remaining % 60).toString().padStart(2, '0’);
+document.getElementById('timer-text’).textContent = m + ':’ + s;
 const pct = (bhState.remaining / 180) * 100;
-const bar = document.getElementById(‘timer-bar’);
-bar.style.width = pct + ‘%’;
-bar.style.background = pct > 50 ? ‘var(–accent2)’ : pct > 25 ? ‘#ffaa00’ : ‘var(–error)’;
-document.getElementById(‘timer-text’).style.color = pct > 25 ? ‘var(–accent2)’ : ‘var(–error)’;
+const bar = document.getElementById('timer-bar’);
+bar.style.width = pct + '%’;
+bar.style.background = pct > 50 ? 'var(–accent2)’ : pct > 25 ? '#ffaa00’ : 'var(–error)’;
+document.getElementById('timer-text’).style.color = pct > 25 ? 'var(–accent2)’ : 'var(–error)’;
 }
 
 function clickLine(idx) {
 if (!bhState.active) return;
 const bugIndex = bhState.bugs.findIndex(b => b.line_index === idx);
-const lineEl = document.querySelector(`.bh-line[data-idx="${idx}"]`);
+const lineEl = document.querySelector(’.bh-line[data-idx=« ${idx} »]’);
 
 if (bugIndex !== -1 && !bhState.found.includes(bugIndex)) {
 // Correct!
 bhState.found.push(bugIndex);
-if (lineEl) { lineEl.style.background = ‘rgba(0,255,157,0.08)’; lineEl.style.borderLeftColor = ‘var(–accent)’; lineEl.style.cursor = ‘default’; }
+if (lineEl) { lineEl.style.background = 'rgba(0,255,157,0.08)’; lineEl.style.borderLeftColor = 'var(–accent)’; lineEl.style.cursor = 'default’; }
 const bug = bhState.bugs[bugIndex];
-const el = document.getElementById(‘bug-item-’ + bugIndex);
+const el = document.getElementById('bug-item-’ + bugIndex);
 if (el) {
-el.className = ‘bug-item found’;
-el.innerHTML = `<div class="bug-num">${bugIndex+1}</div><div><strong style="color:var(--accent)">Ligne ${bug.line_index+1} :</strong> ${bug.description}</div>`;
+el.className = 'bug-item found’;
+el.innerHTML = ’<div class=« bug-num »>${bugIndex+1}</div><div><strong style=« color:var(--accent) »>Ligne ${bug.line_index+1} :</strong> ${bug.description}</div>’;
 }
 const xpGain = Math.max(10, Math.round(bhState.remaining / 4));
 gainXP(xpGain);
 showScorePopup(’+’ + xpGain + ’ XP’, lineEl);
 bugsFoundTotal++;
-document.getElementById(‘stat-bugs’).textContent = bugsFoundTotal;
+document.getElementById('stat-bugs’).textContent = bugsFoundTotal;
 
-```
+’’’
 if (bhState.found.length === bhState.bugs.length) {
   clearInterval(bhState.timer);
   bhState.active = false;
@@ -2420,91 +2420,91 @@ if (bhState.found.length === bhState.bugs.length) {
   document.getElementById('bh-output').style.color = 'var(--success)';
   showToast('🐛 Bug Hunt terminé !', 'Tous les bugs trouvés. +' + bonus + ' XP bonus !');
 }
-```
+’’’
 
 } else if (bugIndex === -1) {
 // Wrong line - flash red
 if (lineEl) {
-lineEl.style.background = ‘rgba(255,68,68,0.1)’;
-lineEl.style.borderLeftColor = ‘var(–error)’;
-setTimeout(() => { lineEl.style.background = ‘transparent’; lineEl.style.borderLeftColor = ‘transparent’; }, 600);
+lineEl.style.background = 'rgba(255,68,68,0.1)’;
+lineEl.style.borderLeftColor = 'var(–error)’;
+setTimeout(() => { lineEl.style.background = 'transparent’; lineEl.style.borderLeftColor = 'transparent’; }, 600);
 }
 }
 }
 
 function revealAllBugs() {
-const out = document.getElementById(‘bh-output’);
-out.style.color = ‘var(–error)’;
-out.textContent = ‘⏱ Temps écoulé ! ’ + bhState.found.length + ‘/’ + bhState.bugs.length + ’ bugs trouvés.’;
+const out = document.getElementById('bh-output’);
+out.style.color = 'var(–error)’;
+out.textContent = '⏱ Temps écoulé ! ’ + bhState.found.length + '/’ + bhState.bugs.length + ’ bugs trouvés.’;
 bhState.bugs.forEach((bug, i) => {
 if (!bhState.found.includes(i)) {
-const el = document.getElementById(‘bug-item-’ + i);
+const el = document.getElementById('bug-item-’ + i);
 if (el) {
-el.className = ‘bug-item missed’;
-el.innerHTML = `<div class="bug-num">${i+1}</div><div><strong style="color:var(--error)">Ligne ${bug.line_index+1} :</strong> ${bug.description}</div>`;
+el.className = 'bug-item missed’;
+el.innerHTML = ’<div class=« bug-num »>${i+1}</div><div><strong style=« color:var(--error) »>Ligne ${bug.line_index+1} :</strong> ${bug.description}</div>’;
 }
-const lineEl = document.querySelector(`.bh-line[data-idx="${bug.line_index}"]`);
-if (lineEl) { lineEl.style.background = ‘rgba(255,68,68,0.08)’; lineEl.style.borderLeftColor = ‘var(–error)’; }
+const lineEl = document.querySelector(’.bh-line[data-idx=« ${bug.line_index} »]’);
+if (lineEl) { lineEl.style.background = 'rgba(255,68,68,0.08)’; lineEl.style.borderLeftColor = 'var(–error)’; }
 }
 });
 }
 
 async function getBugHint() {
 if (!bhState.active || bhState.bugs.length === 0) return;
-const hintArea = document.getElementById(‘bh-hint-area’);
-const btn = document.getElementById(‘bh-hint-btn’);
-btn.textContent = ‘⏳ Chargement…’;
+const hintArea = document.getElementById('bh-hint-area’);
+const btn = document.getElementById('bh-hint-btn’);
+btn.textContent = '⏳ Chargement…’;
 btn.disabled = true;
 
 const remaining = bhState.bugs.filter((_, i) => !bhState.found.includes(i));
 const hint = await callClaude(
-`Dans un code buggué, il reste ${remaining.length} bug(s) non trouvé(s). Donne un indice VAGUE (sans dire la ligne exacte) pour aider l'étudiant. Maximum 2 phrases en français.`,
-`Tu es un tuteur bienveillant pour l'apprentissage du code. Sois cryptique mais utile.`
+’Dans un code buggué, il reste ${remaining.length} bug(s) non trouvé(s). Donne un indice VAGUE (sans dire la ligne exacte) pour aider l’étudiant. Maximum 2 phrases en français.’,
+’Tu es un tuteur bienveillant pour l’apprentissage du code. Sois cryptique mais utile.’
 );
-hintArea.style.display = ‘block’;
-hintArea.innerHTML = ’💡 <strong style="color:var(--accent3)">Indice :</strong> ’ + hint;
+hintArea.style.display = 'block’;
+hintArea.innerHTML = ’💡 <strong style=« color:var(--accent3) »>Indice :</strong> ’ + hint;
 gainXP(-5);
-btn.textContent = ‘💡 Indice (-5 XP)’;
+btn.textContent = '💡 Indice (-5 XP)’;
 btn.disabled = false;
 }
 
 // ===== XP & BADGES =====
 function gainXP(amount) {
 totalXP = Math.max(0, totalXP + amount);
-document.getElementById(‘stat-xp’).textContent = totalXP;
+document.getElementById('stat-xp’).textContent = totalXP;
 // Update header badge
-document.querySelector(’.xp-badge’).textContent = ‘⚡ ’ + totalXP + ’ XP’;
+document.querySelector(’.xp-badge’).textContent = '⚡ ’ + totalXP + ’ XP’;
 // Update XP bar (max level 500 for demo)
 const pct = Math.min(100, Math.round((totalXP % 500) / 500 * 100));
-const fill = document.getElementById(‘xp-fill’);
-if (fill) fill.style.width = pct + ‘%’;
+const fill = document.getElementById('xp-fill’);
+if (fill) fill.style.width = pct + '%’;
 // Check badge unlock
-if (totalXP >= 500 && !unlockedBadges.includes(‘level9’)) {
-unlockedBadges.push(‘level9’);
-showToast(‘⚡ Niveau 9 débloqué !’, ‘Vous avez atteint 500 XP. Continuez ainsi !’);
+if (totalXP >= 500 && !unlockedBadges.includes('level9’)) {
+unlockedBadges.push('level9’);
+showToast('⚡ Niveau 9 débloqué !’, 'Vous avez atteint 500 XP. Continuez ainsi !’);
 }
 }
 
-let unlockedBadges = [‘streak5’, ‘firstbug’, ‘speedcoder’, ‘python50’];
+let unlockedBadges = ['streak5’, 'firstbug’, 'speedcoder’, 'python50’];
 
 function showScorePopup(text, anchorEl) {
-const popup = document.createElement(‘div’);
-popup.className = ‘score-popup’;
+const popup = document.createElement('div’);
+popup.className = 'score-popup’;
 popup.textContent = text;
 const rect = anchorEl ? anchorEl.getBoundingClientRect() : { left: window.innerWidth/2, top: window.innerHeight/2 };
-popup.style.left = (rect.left + 40) + ‘px’;
-popup.style.top = (rect.top - 10) + ‘px’;
+popup.style.left = (rect.left + 40) + 'px’;
+popup.style.top = (rect.top - 10) + 'px’;
 document.body.appendChild(popup);
 setTimeout(() => popup.remove(), 1200);
 }
 
 function showToast(title, body) {
-const toast = document.createElement(‘div’);
-toast.className = ‘toast’;
-toast.innerHTML = `<div class="toast-icon">🎖️</div><div><div class="toast-title">${title}</div><div class="toast-body">${body}</div></div>`;
+const toast = document.createElement('div’);
+toast.className = 'toast’;
+toast.innerHTML = ’<div class=« toast-icon »>🎖️</div><div><div class=« toast-title »>${title}</div><div class=« toast-body »>${body}</div></div>’;
 document.body.appendChild(toast);
 setTimeout(() => {
-toast.classList.add(‘out’);
+toast.classList.add('out’);
 setTimeout(() => toast.remove(), 300);
 }, 3500);
 }
@@ -2514,13 +2514,13 @@ let deferredInstallPrompt = null;
 let swRegistration = null;
 
 // Register Service Worker
-if (‘serviceWorker’ in navigator) {
-window.addEventListener(‘load’, async () => {
+if ('serviceWorker’ in navigator) {
+window.addEventListener('load’, async () => {
 try {
 swRegistration = await navigator.serviceWorker.register(’./sw.js’);
 console.log(’[PWA] Service Worker enregistré :’, swRegistration.scope);
 
-```
+’’’
   // Check for updates
   swRegistration.addEventListener('updatefound', () => {
     const newWorker = swRegistration.installing;
@@ -2538,72 +2538,72 @@ console.log(’[PWA] Service Worker enregistré :’, swRegistration.scope);
 } catch (err) {
   console.warn('[PWA] Service Worker non enregistré :', err);
 }
-```
+’’’
 
 });
 }
 
 function applyUpdate() {
 if (swRegistration && swRegistration.waiting) {
-swRegistration.waiting.postMessage({ type: ‘SKIP_WAITING’ });
+swRegistration.waiting.postMessage({ type: 'SKIP_WAITING’ });
 }
 window.location.reload();
 }
 
 // Capture install prompt (Android/Chrome/Edge)
-window.addEventListener(‘beforeinstallprompt’, e => {
+window.addEventListener('beforeinstallprompt’, e => {
 e.preventDefault();
 deferredInstallPrompt = e;
 // Show banner after 3s if not already installed
 setTimeout(() => {
 if (!window.matchMedia(’(display-mode: standalone)’).matches) {
-document.getElementById(‘install-banner’).classList.add(‘visible’);
+document.getElementById('install-banner’).classList.add('visible’);
 }
 }, 3000);
 });
 
 // Install button
-document.getElementById(‘install-accept’).addEventListener(‘click’, async () => {
+document.getElementById('install-accept’).addEventListener('click’, async () => {
 if (!deferredInstallPrompt) return;
 deferredInstallPrompt.prompt();
 const { outcome } = await deferredInstallPrompt.userChoice;
 console.log(’[PWA] Install outcome:’, outcome);
 deferredInstallPrompt = null;
-document.getElementById(‘install-banner’).classList.remove(‘visible’);
-if (outcome === ‘accepted’) {
-showToast(‘✅ CodeLearn installé !’, ‘L'app est maintenant sur votre écran d'accueil.’);
+document.getElementById('install-banner’).classList.remove('visible’);
+if (outcome === 'accepted’) {
+showToast('✅ CodeLearn installé !’, 'L’app est maintenant sur votre écran d’accueil.’);
 }
 });
 
-document.getElementById(‘install-dismiss’).addEventListener(‘click’, () => {
-document.getElementById(‘install-banner’).classList.remove(‘visible’);
+document.getElementById('install-dismiss’).addEventListener('click’, () => {
+document.getElementById('install-banner’).classList.remove('visible’);
 });
 
 // Offline / Online detection
 function updateOnlineStatus() {
-const bar = document.getElementById(‘offline-bar’);
+const bar = document.getElementById('offline-bar’);
 if (!navigator.onLine) {
-bar.classList.add(‘visible’);
+bar.classList.add('visible’);
 } else {
-bar.classList.remove(‘visible’);
+bar.classList.remove('visible’);
 }
 }
-window.addEventListener(‘online’, updateOnlineStatus);
-window.addEventListener(‘offline’, updateOnlineStatus);
+window.addEventListener('online’, updateOnlineStatus);
+window.addEventListener('offline’, updateOnlineStatus);
 updateOnlineStatus();
 
 // App installed event
-window.addEventListener(‘appinstalled’, () => {
+window.addEventListener('appinstalled’, () => {
 console.log(’[PWA] App installée avec succès’);
-document.getElementById(‘install-banner’).classList.remove(‘visible’);
-showToast(‘🎉 Application installée !’, ‘CodeLearn est prêt sur votre appareil.’);
+document.getElementById('install-banner’).classList.remove('visible’);
+showToast('🎉 Application installée !’, 'CodeLearn est prêt sur votre appareil.’);
 deferredInstallPrompt = null;
 });
 
 // Deep link routing via hash
-window.addEventListener(‘DOMContentLoaded’, () => {
-const hash = window.location.hash.replace(’#’, ‘’);
-const validTabs = [‘lesson’, ‘challenge’, ‘bughunt’, ‘leaderboard’, ‘ai’];
+window.addEventListener('DOMContentLoaded’, () => {
+const hash = window.location.hash.replace(’#’, '’);
+const validTabs = ['lesson’, 'challenge’, 'bughunt’, 'leaderboard’, 'ai’];
 if (validTabs.includes(hash)) {
 switchTab(hash);
 }
